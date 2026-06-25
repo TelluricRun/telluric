@@ -1,0 +1,9 @@
+{
+  "name": "@telluric/web",
+  "dependencies": {
+    "@telluric/ui": "workspace:*",
+    "@telluric/core": "workspace:*",
+    "next": "latest",
+    "react": "latest"
+  }
+}
