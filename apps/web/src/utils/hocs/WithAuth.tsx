@@ -25,9 +25,9 @@ interface IAuthHoc {};
 const WithAuth = <T extends IAuthHoc>(WrappedComponent: ComponentType<T>): React.FC<Omit<T, keyof IAuthHoc>> => {
 	return function WithAuth (props: Omit<T, keyof IAuthHoc>) {
 		const { isAuthenticated } = AuthService();
-		const { getAppUrls } = ConfigService();
+		const { getAppsWebUrls } = ConfigService();
 		const { redirectTo } = RedirectService();
-		const { APP_BASE_URL, APP_SIGNIN_URL } = getAppUrls();
+		const { APPS_WEB_BASE_URL, APPS_WEB_SIGNIN_URL } = getAppsWebUrls();
 		const router = useRouter();
 		const path = usePathname();
 
@@ -39,13 +39,13 @@ const WithAuth = <T extends IAuthHoc>(WrappedComponent: ComponentType<T>): React
 					switch (routeType) {
 						case RouteTypes.PROTECTED:
 							if (!isAuthenticated()) {
-								redirectTo(router, APP_SIGNIN_URL);
+								redirectTo(router, APPS_WEB_SIGNIN_URL);
 							}
 							break;
 						case RouteTypes.PUBLIC:
 							if (isAuthenticated()) {
 								if (path.startsWith('/auth/signup') || path.startsWith('/auth/signin')) {
-									redirectTo(router, APP_BASE_URL);
+									redirectTo(router, APPS_WEB_BASE_URL);
 								}
 							}
 							break;
@@ -57,7 +57,7 @@ const WithAuth = <T extends IAuthHoc>(WrappedComponent: ComponentType<T>): React
 					console.error('Authorization error: ', error);
 				}
 			}
-		});
+		}, [path, isAuthenticated, redirectTo, router, APPS_WEB_BASE_URL, APPS_WEB_SIGNIN_URL]);
 
 		return <WrappedComponent { ...props as T } />;
 	};
