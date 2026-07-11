@@ -7,9 +7,10 @@ const nextConfig = {
 	reactStrictMode: true,
 	trailingSlash: true,
 	env: {
+		...config.WEB_PAGE_URLS,
+		...config.WEB_BLOG_URLS,
+		...config.APPS_WEB_URLS,
 		...config.API_URLS,
-		...config.APP_URLS,
-		...config.PAGE_URLS,
 	},
 };
 
