@@ -1,0 +1,127 @@
+.marketContentWrapper {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	background-color: #FFFFFF;
+}
+
+.marketContentContainer {
+	display: flex;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	background-color: #FFFFFF;
+	background-image: var(--diagonal-lines);
+}
+
+.marketContentSection {
+	display: flex;
+	flex-direction: column;
+	padding: 0;
+	width: calc(100% - 2px);
+	border-right: 1px solid var(--glacier-dark);
+	border-left: 1px solid var(--glacier-dark);
+	background-color: #FFFFFF;
+	max-width: 1400px;
+	align-items: center;
+	justify-content: center;
+}
+
+.marketContentSection .marketContentRow:first-child h4 {
+	font-weight: 450;
+}
+
+.marketContentSection > h1, .marketContentSection > h2 {
+	color: var(--dark-glare);
+}
+
+.marketContentRow {
+	width: calc(100% - 150px);
+	display: flex;
+	padding: 75px;
+	align-items: center;
+	justify-content: center;
+}
+
+.marketContentRow:nth-child(2) {
+	flex-direction: row;
+	width: 100%;
+	padding: 0;
+	flex-wrap: wrap;
+	border-top: 1px solid var(--glacier-dark);
+	border-bottom: 1px solid var(--glacier-dark);
+}
+
+.marketContentRow:first-child {
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+	gap: 15px;
+	width: calc(100% - 150px);
+	align-self: flex-start;
+}
+
+.marketContentRowItem {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	gap: 15px;
+	padding: 75px;
+	height: 375px;
+	background-color: #FFFFFF;
+	border-right: 1px solid var(--glacier-dark);
+}
+
+.marketContentRowItem:last-child {
+	border-right: none;
+}
+
+.marketContentRowItem:nth-child(1) {
+	justify-content: flex-start;
+}
+
+.marketContentRowItem:nth-child(2) {
+	justify-content: center;
+}
+
+.marketContentRowItem:nth-child(3) {
+	justify-content: flex-end;
+}
+
+.marketContentRowItem h2 {
+	color: var(--tropical-green-light);
+}
+
+.marketContentRowItem h3 {
+	font-weight: 450;
+}
+
+@media only screen and (max-width: 1100px) {
+	.marketContentSection:nth-child(2) {
+		width: 100%;
+		border: none;
+	}
+
+	.marketContentRow:nth-child(2) {
+		flex-direction: column;
+		flex-wrap: wrap;
+	}
+
+	.marketContentRowItem {
+		width: calc(100% - 150px);
+		flex: none;
+		border-right: none;
+		border-bottom: 1px solid var(--glacier-dark);
+	}
+
+	.marketContentRowItem:last-child {
+		border-bottom: none;
+	}
+}
+
+@media only screen and (max-width: 1280px) {
+	.marketContentRow:last-child {
+		background-image: var(--diagonal-lines);
+	}
+}

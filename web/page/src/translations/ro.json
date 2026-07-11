@@ -1,0 +1,288 @@
+{
+	"components": {
+		"dock": {
+			"button-primary": "Înregistrare",
+			"button-secondary": "Autentificare",
+			"button-tertiary": "Aplicație" 
+		},
+		"hero": {
+			"title-primary": "Afacerea ta.",
+			"title-secondary": "Online. Acum.",
+			"description-primary": "Lansează-ți afacerea în câteva minute, nu luni. Implementată automat în cloud-ul tău, în mai puțin de 5 minute.",
+			"button-primary": "Lansează-ți afacerea"
+		},
+		"sponsor": {
+			"description-primary": "Parteneri"
+		},
+		"steps": {
+			"title-primary": "Ready",
+			"title-secondary": "În 5 minute",
+			"button-primary": "Începe acum",
+			"step-one": {
+				"name": "Selectează",
+				"description": "Alege o soluție care se potrivește nevoilor tale."
+			},
+			"step-two": {
+				"name": "Pregătește",
+				"description": "Furnizează cerințele preliminare precum logo-uri și texte. (opțional)"
+			},
+			"step-three": {
+				"name": "Conectează",
+				"description": "Conectează-ți furnizorul de cloud și domeniul."
+			},
+			"step-four": {
+				"name": "Lansează",
+				"description": "Plătește și lansează-ți platforma în cloud."
+			}
+		},
+		"standards": {
+			"title-primary": "Standardizăm",
+			"title-secondary": "calitatea superioară",
+			"button-primary": "Începe acum",
+			"feature-one": {
+				"name": "Accesibilitate",
+				"description": "Design inclusiv"
+			},
+			"feature-two": {
+				"name": "Module cookie",
+				"description": "Experiență de utilizare transparentă"
+			},
+			"feature-three": {
+				"name": "GDPR",
+				"description": "Confidențialitate de top a datelor"
+			},
+			"feature-four": {
+				"name": "Responsiv",
+				"description": "Adaptare fără probleme la orice dispozitiv"
+			},
+			"feature-five": {
+				"name": "SEO",
+				"description": "Vizibilitate online îmbunătățită"
+			},
+			"feature-six": {
+				"name": "Securitate",
+				"description": "Protecție robustă împotriva amenințărilor cibernetice"
+			},
+			"feature-seven": {
+				"name": "Internaționalizare",
+				"description": "Suport pentru extinderea globală"
+			},
+			"feature-eight": {
+				"name": "Personalizare",
+				"description": "Flexibilitate și unicitate"
+			}
+		},
+		"why": {
+			"title-primary": "De ce",
+			"title-secondary": "Ready Software",
+			"provider-one": "Agenție/developer",
+			"provider-two": "Platformă no/low code",
+			"category-one": {
+				"name": "Proprietate",
+				"items": {
+					"item-one": "Infrastructură",
+					"item-two": "Cod",
+					"item-three": "Date"
+				}
+			},
+			"category-two": {
+				"name": "Calitate",
+				"items": {
+					"item-one": "Infrastructură",
+					"item-two": "Cod",
+					"item-three": "Actualizări automate"
+				}
+			},
+			"category-three": {
+				"name": "Backup",
+				"items": {
+					"item-one": "Setări și configurații",
+					"item-two": "Cod și istoric git"
+				}
+			},
+			"category-four": {
+				"name": "Costuri",
+				"items": {
+					"item-one": "Prețuri mici, accesibile",
+					"item-two": "Timp de implementare scăzut"
+				}
+			},
+			"category-five": {
+				"name": "Ușurință",
+				"items": {
+					"item-one": "Fără discuții interminabile",
+					"item-three": "Panou de administrare intuitiv",
+					"item-two": "Implementare automatizată în cloud"
+				}
+			},
+			"category-six": {
+				"name": "Personalizare",
+				"items": {
+					"item-one": "Aspect și teme flexibile",
+					"item-two": "Logică de business personalizată"
+				}
+			},
+			"category-seven": {
+				"name": "Scalabilitate",
+				"items": {
+					"item-one": "Infrastructură cu auto-scalare",
+					"item-two": "Bază de cod extensibilă",
+					"item-three": "Monitorizare costuri cloud"
+				}
+			}
+		},
+		"solutions": {
+			"title-primary": "Soluții software",
+			"title-secondary": "Gata de business",
+			"link-primary": "Vezi toate soluțiile",
+			"solution-one": {
+				"name": "Rezervări transport",
+				"description": "Pentru companii de transport persoane, colete și marfă.",
+				"features": {
+					"feature-one": "Sistem pentru rezervări",
+					"feature-two": "Calendar",
+					"feature-three": "Plăți online",
+					"feature-four": "Notificări SMS și email",
+					"feature-five": "CRM",
+					"feature-six": "Blog",
+					"feature-seven": "Chat live",
+					"feature-eight": "Manager rute și autovehicule",
+					"feature-nine": "Agenți parteneri",
+					"feature-ten": "Sistem AWB"
+				}
+			},
+			"solution-two": {
+				"name": "Programări medicale",
+				"description": "Pentru clinici și centre medicale, atât umane cât și veterinare.",
+				"features": {
+					"feature-one": "Sistem pentru programări",
+					"feature-two": "Calendar",
+					"feature-three": "Plăți online",
+					"feature-four": "Notificări SMS și email",
+					"feature-five": "CRM",
+					"feature-six": "Blog",
+					"feature-seven": "Chat live",
+					"feature-eight": "Telemedicină"
+				}
+			}
+		},
+		"usage": {
+			"title-primary": "Rezultate reale",
+			"title-secondary": "Recenzii reale",
+			"testimonial-one": {
+				"content": "Cu ajutorul platformei Ready Software, am reușit să optimizăm procesele interne și să automatizăm sarcinile repetitive. Implementarea rapidă în cloud și suportul excelent ne-au permis să ne concentrăm pe creșterea afacerii noastre, în loc să pierdem timp prețios cu gestionarea infrastructurii IT.",
+				"author": {
+					"photo": "1",
+					"name": "Alexandra Andronache",
+					"title": "Director de Operațiuni Logistice"
+				}
+			},
+			"testimonial-two": {
+				"content": "Ready Software ne-a oferit o soluție scalabilă și personalizată care a răspuns perfect nevoilor noastre. Adaptabilitatea la diferite dispozitive și integrarea facilă cu sistemele noastre existente au fost factori esențiali pentru alegerea acestei platforme. Recomandăm cu căldură!",
+				"author": {
+					"photo": "2",
+					"name": "Andrei Ionescu",
+					"title": "Director de Dezvoltare Business"
+				}
+			},
+			"testimonial-three": {
+				"content": "Am fost impresionați de cât de rapid a fost implementat software-ul în cloud-ul nostru, fără probleme și fără întârzieri. Acum putem gestiona toate operațiunile printr-un panou de administrare intuitiv, iar clienții noștri beneficiază de o experiență de utilizare transparentă și de calitate superioară. Ready Software ne-a ajutat să ne extindem vizibilitatea online și să ne protejăm împotriva amenințărilor cibernetice.",
+				"author": {
+					"photo": "3",
+					"name": "Elena Gheorghe",
+					"title": "Manager de Relații cu Clienții"
+				}
+			},
+			"testimonial-four": {
+				"content": "De la personalizarea temelor și a logicii de business, până la monitorizarea costurilor în cloud și actualizările automate, Ready Software ne-a oferit tot ce aveam nevoie pentru a ne adapta rapid și eficient la cerințele pieței. Suportul pentru internaționalizare ne-a permis să ne extindem global, iar securitatea robustă ne asigură că datele noastre sunt mereu protejate.",
+				"author": {
+					"photo": "4",
+					"name": "Victor Dumitrescu",
+					"title": "Director de Marketing și Branding"
+				}
+			},
+			"testimonial-five": {
+				"content": "Cu Ready Software, nu doar că am redus costurile și timpul de implementare, dar am reușit să oferim clienților noștri o experiență de utilizare excelentă. Flexibilitatea și unicitatea soluțiilor lor ne-au permis să personalizăm fiecare aspect al platformei pentru a ne reflecta perfect brandul și nevoile specifice.",
+				"author": {
+					"photo": "5",
+					"name": "Ioana Mihai",
+					"title": "Analist de Date și Strategie"
+				}
+			}
+		},
+		"showcase": {
+
+		},
+		"incentive": {
+			"title-primary": "Caracteristici",
+			"title-secondary": "Unice",
+			"incentive-one": {
+				"title": "Căutare inteligentă",
+				"description": "Optimizezi și eficientizezi traseele, având acces la căutare inteligentă de locații și destinații."
+			},
+			"incentive-two": {
+				"title": "Rapoarte de analiză",
+				"description": "Vizualizezi rapoarte de analiză în timp real asupra performanțelor companiei tale."
+			},
+			"incentive-three": {
+				"title": "Interfețe intuitive",
+				"description": "Utilizezi interfețe intuitive pentru a orchestra flota, traseele, clienții și rezervările."
+			},
+			"incentive-four": {
+				"title": "Conversare live",
+				"description": "Oferi suport direct clienților, interacționând cu aceștia prin conversații live pe platformă."
+			},
+			"incentive-five": {
+				"title": "Optimizare profiluri",
+				"description": "Crești recunoașterea și potențialul vânzărilor, creând profiluri publice, optimizate pentru motoarele de căutare."
+			},
+			"incentive-six": {
+				"title": "Procese automatizare",
+				"description": "Configurezi automatizări pentru emiterea de facturi, chitanțe si itinerarii."
+			}
+		},
+		"market": {
+			"title-primary": "Eficiență totală",
+			"title-secondary": "Securitate maximă",
+			"market-one": {
+				"description": "Bani economisiți",
+				"title": "90%"
+			},
+			"market-two": {
+				"description": "Timp economisit",
+				"title": "99%"
+			},
+			"market-three": {
+				"description": "Cod deținut",
+				"title": "100%"
+			},
+			"market-four": {
+				"description": "Date deținute",
+				"title": "100%"
+			}
+		},
+		"brand": {
+			"title-primary": "Ai un proiect?",
+			"link-primary": "Lansează-l acum"
+		},
+		"sidebar": {
+			
+		},
+		"footer": {
+			"column-one": {
+				"company": "Companie",
+				"about": "Despre",
+				"careers": "Cariere",
+				"faq": "FAQ"
+			},
+			"column-two": {
+				"social": "Social"
+			},
+			"column-three": {
+				"contact": "Contact",
+				"support": "Suport",
+				"address": "Adresă"
+			}
+		}
+	}
+}

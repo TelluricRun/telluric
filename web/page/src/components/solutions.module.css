@@ -1,0 +1,122 @@
+.solutionsContentWrapper {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	background-color: #FFFFFF;
+	padding: 150px 0;
+}
+
+.solutionsContentContainer {
+	display: flex;
+	width: calc(100% - 30px);
+	max-width: 1400px;
+	padding: 0 15px;
+	flex-direction: column;
+	gap: 75px;
+}
+
+.solutionsContentSection {
+	display: flex;
+	flex-direction: column;
+}
+
+.solutionsContentSection > h2:last-child {
+	color: var(--glacier-darker);
+}
+
+.solutionsContentRow {
+	display: flex;
+	flex-direction: column;
+}
+
+.solutionsContentRow h2 {
+	font-weight: 400;
+}
+
+.solutionsContentRowItem {
+	display: flex;
+	border-top: 1px solid #000000;
+	padding: 75px 0;
+	gap: 25px;
+	transition: .25s;
+	cursor: pointer;
+	user-select: none;
+}
+
+.solutionsContentRowItem:last-child {
+	border-bottom: 1px solid #000000;
+}
+
+.solutionsContentRowItemContent {
+	display: flex;
+	width: calc(100% - 65px);
+	gap: 75px;
+}
+
+.solutionsContentRowItemToggle {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	flex-shrink: 0;
+	width: 40px;
+	height: 51px;
+}
+
+.solutionsContentRowItemTitle {
+	display: flex;
+	flex-direction: column;
+	flex: 1 1 0;
+	gap: 15px;
+}
+
+.solutionsContentRowItemTitleSelected > h2 {
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: #0000;
+	background-image: linear-gradient(90deg, var(--emerald-dark) 10%, var(--emerald-light));
+}
+
+.solutionsContentRowItemFeaturesList {
+	display: flex;
+	flex-wrap: wrap;
+	flex: 1 1 0;
+	gap: 25px;
+	max-height: 0;
+	transition: all 0.25s ease-out;
+	overflow: hidden;
+	visibility: hidden;
+	opacity: 0;
+	height: 0;
+}
+
+.solutionsContentRowItemFeaturesList > div:last-child {
+	align-self: flex-start;
+	padding: 6px 0;
+	border-bottom: 1px solid #000000;
+	margin-top: 25px;
+}
+
+.solutionsContentRowItemFeaturesListVisible {
+	max-height: 1000px;
+	transition: all 0.5s ease-in;
+	overflow: visible;
+	visibility: visible;
+	opacity: 1;
+	flex-direction: column;
+	height: auto;
+}
+
+@media only screen and (max-width: 1400px) {}
+
+@media only screen and (max-width: 1100px) {}
+
+@media only screen and (max-width: 800px) {
+	.solutionsContentRowItemContent {
+		flex-direction: column;
+		gap: 0;
+	}
+
+	.solutionsContentRowItemFeaturesListVisible {
+		margin-top: 75px;
+	}
+}

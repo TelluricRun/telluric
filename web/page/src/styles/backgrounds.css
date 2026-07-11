@@ -1,0 +1,7 @@
+:root {
+	--diagonal-lines: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"><defs><pattern id="diagonalLines" patternUnits="userSpaceOnUse" width="5" height="5" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="5" stroke="%23e1e1e1" stroke-width="1"/></pattern></defs><rect width="100%" height="100%" fill="url(%23diagonalLines)"/></svg>');
+	--tropical-primary: radial-gradient(at 71% 57%, rgba(51, 255, 0, 0.3) 0px, transparent 50%), radial-gradient(at 53% 43%, rgba(255, 255, 0, 0.3) 0px, transparent 50%), radial-gradient(at 31% 51%, rgba(255, 128, 0, 0.17) 0px, transparent 50%);
+	--tropical-secondary: radial-gradient(at 53% 78%, rgba(255, 255, 0, 0.3) 0px, transparent 50%), radial-gradient(at 71% 91%, rgba(51, 255, 0, 0.3) 0px, transparent 50%), radial-gradient(at 31% 91%, rgba(255, 128, 0, 0.17) 0px, transparent 50%);
+	--tropical-tertiary: radial-gradient(at 71% 57%, var(--tropical-green-light-transparent) 0px, transparent 50%), radial-gradient(at 53% 43%, var(--tropical-green-transparent) 0px, transparent 50%), radial-gradient(at 31% 51%, var(--tropical-green-dark-transparent) 0px, transparent 50%);
+	--tropical-midnight: radial-gradient(at 71% 57%, rgba(127, 143, 244, 0.15) 0px, transparent 50%), radial-gradient(at 53% 43%, rgba(108, 127, 242, 0.15) 0px, transparent 50%), radial-gradient(at 31% 51%, rgba(84, 106, 226, 0.15) 0px, transparent 50%);
+}

@@ -1,0 +1,87 @@
+.incentiveContentWrapper {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	background-color: #FFFFFF;
+	padding: 100px 0;
+}
+
+.incentiveContentContainer {
+	display: flex;
+	width: calc(100% - 30px);
+	max-width: 1400px;
+	padding: 0 15px;
+	flex-wrap: wrap;
+	flex-direction: column;
+	gap: 45px;
+}
+
+.incentiveContentSection {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 30px;
+}
+
+.incentiveContentSection:nth-child(3) .incentiveContentRowItem {
+	background-color: unset;
+	padding: 0;
+	max-width: 766px;
+	gap: 25px;
+	transition: .25s;
+}
+
+.incentiveContentSectionColumnTitle {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	gap: 15px;
+}
+
+.incentiveContentRow {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 25px;
+	align-items: center;
+	justify-content: center;
+}
+
+.incentiveContentRowItem {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	flex: 100%;
+	max-width: 666px;
+	background-color: var(--glacier-light);
+	padding: 50px;
+	gap: 25px;
+	transition: .25s;
+	text-align: justify;
+}
+
+.incentiveContentSection h2 {
+	color: var(--dark-glare);
+}
+
+.fadeIn {
+	opacity: 0;
+	transform: translateY(20px);
+	transition: opacity .5s ease-in-out, transform .5s ease-in-out, -webkit-box-shadow .25s, -moz-box-shadow .25s, box-shadow .25s;
+}
+
+.isVisible {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+@media only screen and (max-width: 800px) {
+	.incentiveContentWrapper {
+		padding: 75px 0;
+	}
+
+	.incentiveContentRowItem {
+		padding: 25px;
+	}
+}

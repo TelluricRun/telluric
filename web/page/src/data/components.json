@@ -1,0 +1,422 @@
+{
+	"adaptive-menu": {
+		"items": [
+			{
+				"label": "Platform",
+				"description": "",
+				"iconLeft": "",
+				"iconRight": "IconArrowDown",
+				"svg": "",
+				"link": "",
+				"children": []
+			},
+			{
+				"label": "Resources",
+				"description": "",
+				"iconLeft": "",
+				"iconRight": "IconArrowDown",
+				"svg": "",
+				"link": "",
+				"children": []
+			},
+			{
+				"label": "Pricing",
+				"description": "",
+				"iconLeft": "",
+				"iconRight": "",
+				"svg": "",
+				"link": "",
+				"children": []
+			},
+			{
+				"label": "Experiences",
+				"description": "",
+				"iconLeft": "IconThreeStars",
+				"iconRight": "",
+				"svg": "",
+				"link": "",
+				"children": []
+			}
+		]
+	},
+	"dock": {
+
+	},
+	"hero": {
+
+	},
+	"features": {
+		"items": [
+			{
+				"name": "components.features.feature-one.name",
+				"description": "components.features.feature-one.description",
+				"icon": "IconFeatureOne"
+			},
+			{
+				"name": "components.features.feature-two.name",
+				"description": "components.features.feature-two.description",
+				"icon": "IconFeatureTwo"
+			},
+			{
+				"name": "components.features.feature-three.name",
+				"description": "components.features.feature-three.description",
+				"icon": "IconFeatureThree"
+			},
+			{
+				"name": "components.features.feature-four.name",
+				"description": "components.features.feature-four.description",
+				"icon": "IconFeatureFour"
+			},
+			{
+				"name": "components.features.feature-five.name",
+				"description": "components.features.feature-five.description",
+				"icon": "IconFeatureFive"
+			}
+		]
+	},
+	"sponsor": {
+		"items": [
+			{
+				"name": "businessgrouponhealth",
+				"width": 114,
+				"height": 54
+			},
+			{
+				"name": "geekwire",
+				"width": 140,
+				"height": 26
+			},
+			{
+				"name": "massachusettsinstituteoftechnology",
+				"width": 144,
+				"height": 36
+			},
+			{
+				"name": "pitchbook",
+				"width": 154,
+				"height": 24
+			},
+			{
+				"name": "theconferenceboard",
+				"width": 206,
+				"height": 28
+			}
+		]
+	},
+	"standards": {
+		"items": [
+			{
+				"id": "accessibility",
+				"name": "components.standards.feature-one.name",
+				"description": "components.standards.feature-one.description"
+			},
+			{
+				"id": "cookies",
+				"name": "components.standards.feature-two.name",
+				"description": "components.standards.feature-two.description"
+	
+			},
+			{
+				"id": "gdpr",
+				"name": "components.standards.feature-three.name",
+				"description": "components.standards.feature-three.description"
+			},
+			{
+				"id": "responsive",
+				"name": "components.standards.feature-four.name",
+				"description": "components.standards.feature-four.description"
+			},
+			{
+				"id": "seo",
+				"name": "components.standards.feature-five.name",
+				"description": "components.standards.feature-five.description"
+			},
+			{
+				"id": "security",
+				"name": "components.standards.feature-six.name",
+				"description": "components.standards.feature-six.description"
+			},
+			{
+				"id": "internationalization",
+				"name": "components.standards.feature-seven.name",
+				"description": "components.standards.feature-seven.description"
+			},
+			{
+				"id": "customization",
+				"name": "components.standards.feature-eight.name",
+				"description": "components.standards.feature-eight.description"
+			}
+		]
+	},
+	"why": {
+		"providers": [
+			"components.why.provider-one",
+			"components.why.provider-two"
+		],
+		"categories": [
+			{
+				"name": "components.why.category-one.name",
+				"items": [
+					{
+						"name": "components.why.category-one.items.item-one",
+						"agency": true,
+						"noLowCode": false,
+						"readySoftware": true
+					},
+					{
+						"name": "components.why.category-one.items.item-two",
+						"agency": true,
+						"noLowCode": false,
+						"readySoftware": true
+					},
+					{
+						"name": "components.why.category-one.items.item-three",
+						"agency": true,
+						"noLowCode": false,
+						"readySoftware": true
+					}
+				]
+			},
+			{
+				"name": "components.why.category-two.name",
+				"items": [
+					{
+						"name": "components.why.category-two.items.item-one",
+						"agency": false,
+						"noLowCode": false,
+						"readySoftware": true
+					},
+					{
+						"name": "components.why.category-two.items.item-two",
+						"agency": true,
+						"noLowCode": false,
+						"readySoftware": true
+					},
+					{
+						"name": "components.why.category-two.items.item-three",
+						"agency": false,
+						"noLowCode": true,
+						"readySoftware": true
+					}
+				]
+			},
+			{
+				"name": "components.why.category-three.name",
+				"items": [
+					{
+						"name": "components.why.category-three.items.item-one",
+						"agency": false,
+						"noLowCode": false,
+						"readySoftware": true
+					},
+					{
+						"name": "components.why.category-three.items.item-two",
+						"agency": false,
+						"noLowCode": false,
+						"readySoftware": true
+					}
+				]
+			},
+			{
+				"name": "components.why.category-four.name",
+				"items": [
+					{
+						"name": "components.why.category-four.items.item-one",
+						"agency": false,
+						"noLowCode": true,
+						"readySoftware": true
+					},
+					{
+						"name": "components.why.category-four.items.item-two",
+						"agency": false,
+						"noLowCode": true,
+						"readySoftware": true
+					}
+				]
+			},
+			{
+				"name": "components.why.category-five.name",
+				"items": [
+					{
+						"name": "components.why.category-five.items.item-one",
+						"agency": false,
+						"noLowCode": true,
+						"readySoftware": true
+					},
+					{
+						"name": "components.why.category-five.items.item-two",
+						"agency": false,
+						"noLowCode": false,
+						"readySoftware": true
+					},
+					{
+						"name": "components.why.category-five.items.item-three",
+						"agency": false,
+						"noLowCode": true,
+						"readySoftware": true
+					}
+				]
+			},
+			{
+				"name": "components.why.category-six.name",
+				"items": [
+					{
+						"name": "components.why.category-six.items.item-one",
+						"agency": false,
+						"noLowCode": true,
+						"readySoftware": true
+					},
+					{
+						"name": "components.why.category-six.items.item-two",
+						"agency": true,
+						"noLowCode": false,
+						"readySoftware": true
+					}
+				]
+			},
+			{
+				"name": "components.why.category-seven.name",
+				"items": [
+					{
+						"name": "components.why.category-seven.items.item-one",
+						"agency": false,
+						"noLowCode": false,
+						"readySoftware": true
+					},
+					{
+						"name": "components.why.category-seven.items.item-two",
+						"agency": true,
+						"noLowCode": false,
+						"readySoftware": true
+					},
+					{
+						"name": "components.why.category-seven.items.item-three",
+						"agency": false,
+						"noLowCode": false,
+						"readySoftware": true
+					}
+				]
+			}
+		]
+	},
+	"solutions": {
+		"items": [
+			{
+				"name": "components.solutions.solution-one.name",
+				"description": "components.solutions.solution-one.description",
+				"features": [
+					"components.solutions.solution-one.features.feature-one",
+					"components.solutions.solution-one.features.feature-two",
+					"components.solutions.solution-one.features.feature-three",
+					"components.solutions.solution-one.features.feature-four",
+					"components.solutions.solution-one.features.feature-five",
+					"components.solutions.solution-one.features.feature-six",
+					"components.solutions.solution-one.features.feature-seven",
+					"components.solutions.solution-one.features.feature-eight",
+					"components.solutions.solution-one.features.feature-nine",
+					"components.solutions.solution-one.features.feature-ten"
+				]
+			},
+			{
+				"name": "components.solutions.solution-two.name",
+				"description": "components.solutions.solution-two.description",
+				"features": [
+					"components.solutions.solution-two.features.feature-one",
+					"components.solutions.solution-two.features.feature-two",
+					"components.solutions.solution-two.features.feature-three",
+					"components.solutions.solution-two.features.feature-four",
+					"components.solutions.solution-two.features.feature-five",
+					"components.solutions.solution-two.features.feature-six",
+					"components.solutions.solution-two.features.feature-seven",
+					"components.solutions.solution-two.features.feature-eight"
+				]
+			}
+		]
+	},
+	"steps": {
+		"items": [
+			{
+				"name": "components.steps.step-one.name",
+				"description": "components.steps.step-one.description",
+				"icon": "select"
+			},
+			{
+				"name": "components.steps.step-two.name",
+				"description": "components.steps.step-two.description",
+				"icon": "prepare"
+			},
+			{
+				"name": "components.steps.step-three.name",
+				"description": "components.steps.step-three.description",
+				"icon": "connect"
+			},
+			{
+				"name": "components.steps.step-four.name",
+				"description": "components.steps.step-four.description",
+				"icon": "deploy"
+			}
+		]
+	},
+	"usage": {
+		"items": [
+			{
+				"testimonial": "components.usage.testimonial-one.content",
+				"author": {
+					"photo": "components.usage.testimonial-one.author.photo",
+					"name": "components.usage.testimonial-one.author.name",
+					"title": "components.usage.testimonial-one.author.title"
+				}
+			},
+			{
+				"testimonial": "components.usage.testimonial-two.content",
+				"author": {
+					"photo": "components.usage.testimonial-two.author.photo",
+					"name": "components.usage.testimonial-two.author.name",
+					"title": "components.usage.testimonial-two.author.title"
+				}
+			},
+			{
+				"testimonial": "components.usage.testimonial-three.content",
+				"author": {
+					"photo": "components.usage.testimonial-three.author.photo",
+					"name": "components.usage.testimonial-three.author.name",
+					"title": "components.usage.testimonial-three.author.title"
+				}
+			},
+			{
+				"testimonial": "components.usage.testimonial-four.content",
+				"author": {
+					"photo": "components.usage.testimonial-four.author.photo",
+					"name": "components.usage.testimonial-four.author.name",
+					"title": "components.usage.testimonial-four.author.title"
+				}
+			},
+			{
+				"testimonial": "components.usage.testimonial-five.content",
+				"author": {
+					"photo": "components.usage.testimonial-five.author.photo",
+					"name": "components.usage.testimonial-five.author.name",
+					"title": "components.usage.testimonial-five.author.title"
+				}
+			}
+		]
+	},
+	"showcase": {
+
+	},
+	"incentive": {
+
+	},
+	"market": {
+
+	},
+	"brand": {
+
+	},
+	"sidebar": {
+
+	},
+	"footer": {
+
+	}
+}

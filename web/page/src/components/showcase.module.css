@@ -1,0 +1,134 @@
+.showcaseContentWrapper {
+	background-color: #FFFFFF;
+	padding: 150px 15px;
+}
+
+.showcaseContentSection {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	gap: 75px;
+}
+
+.showcaseContentSectionRow {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 25px;
+	justify-content: center;
+}
+
+.showcaseContentSectionRowItem {
+	flex: 1 1 0;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+.showcaseContentSection h2:last-child {
+	color: var(--glacier-darker);
+}
+
+.showcaseContentSectionGrid {
+	display: flex;
+	gap: 10px;
+	background-color: #FFFFFF;
+	max-width: 1200px;
+	margin: 0 auto;
+	width: 100%;
+}
+
+.showcaseContentSectionGridRow {
+	background-color: var(--glacier-light);
+	flex: 0 0 calc(calc(100% - 20px) / 3);
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	justify-content: flex-start;
+	justify-items: flex-start;
+	background-color: #FFFFFF;
+}
+
+.showcaseContentSectionGridItem, .showcaseContentSectionGridItemTall {
+	display: flex;
+	flex-direction: column;
+	background-color: var(--glacier-light);
+	height: 320px;
+	border: 2px solid transparent;
+	border-radius: 6px;
+	transition: .345s;
+}
+
+.showcaseContentSectionGridItem:hover, .showcaseContentSectionGridItemTall:hover {
+	border-color: var(--emerald-dark);
+}
+
+.showcaseContentSectionGridItemTall {
+	height: 654px;
+}
+
+.showcaseContentGridItemPhoto {
+	flex: 1 1 0;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.photo1 {
+	background-image: url('/assets/img/showcase/1.png');
+	background-size: 140% auto;
+}
+
+.photo2 {
+	background-image: url('/assets/img/showcase/2.png');
+	background-size: 95% auto;
+}
+
+.photo3 {
+	background-image: url('/assets/img/showcase/3.png');
+	background-size: 100% auto;
+}
+
+.photo4 {
+	background-image: url('/assets/img/showcase/4.png');
+	background-size: 80% auto;
+}
+
+.photo5 {
+	background-image: url('/assets/img/showcase/5.png');
+	background-size: 100% auto;
+}
+
+.photo6 {
+	background-image: url('/assets/img/showcase/6.png');
+	background-size: 100% auto;
+}
+
+.photo7 {
+	background-image: url('/assets/img/showcase/7.png');
+	background-size: 200% auto;
+}
+
+.showcaseContentGridItemText {
+	padding: 15px;
+}
+
+.showcaseContentGridItemText > h3 {
+	font-size: 1rem;
+	font-weight: 400;
+	color: var(--text-primary);
+}
+
+.showcaseContentGridItemText > h3:first-child {
+	font-weight: 600;
+	color: var(--dark-primary);
+}
+
+@media only screen and (max-width: 1100px) {
+	.showcaseContentSectionGrid {
+		flex-direction: column;
+	}
+	
+	.showcaseContentSectionGridRow {
+		flex: 0 0 100%;
+	}
+}
