@@ -3,6 +3,7 @@
 import config from './env.config.mjs';
 
 const nextConfig = {
+	output: 'export',
 	reactStrictMode: true,
 	trailingSlash: true,
 	env: {
