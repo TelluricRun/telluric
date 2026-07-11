@@ -1,5 +1,5 @@
 {
-  "name": "@telluric/apps/web",
+  "name": "@telluric/web/page",
   "dependencies": {
     "@telluric/ui": "workspace:*",
     "@telluric/core": "workspace:*",
