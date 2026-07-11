@@ -29,12 +29,12 @@ const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID || 'G-XN8ERH
 const RootLayout = ({ children }: Readonly<{ children: React.ReactNode }>) => {
 	const { getInterFont } = useFont();
 	const interFont = getInterFont();
-	const { getPageUrls, getAppUrls } = useConfig();
+	const { getWebPageUrls, getAppsWebUrls } = useConfig();
 	const { redirectTo } = useRedirect();
 	const { LocaleContext, locale, locales, changeLocale, translate } = useLocale();
 	const { isAuthenticated } = useAuth();
-	const { PAGE_BASE_URL } = getPageUrls();
-	const { APP_BASE_URL, APP_SIGNUP_URL, APP_SIGNIN_URL } = getAppUrls();
+	const { WEB_PAGE_BASE_URL } = getWebPageUrls();
+	const { APPS_WEB_BASE_URL, APPS_WEB_SIGNUP_URL, APPS_WEB_SIGNIN_URL } = getAppsWebUrls();
 	const auth = isAuthenticated();
 	const { ScrollContext, registerRef } = useScroll();
 
@@ -48,7 +48,7 @@ const RootLayout = ({ children }: Readonly<{ children: React.ReactNode }>) => {
 				<Button
 					size={ 'small' }
 					text={ translate('components.dock.button-tertiary') }
-					onClick={ (): void => redirectTo(APP_BASE_URL) }
+					onClick={ (): void => redirectTo(APPS_WEB_BASE_URL) }
 					onMouseOverAnimation={ false }
 				/>
 			);
@@ -60,14 +60,14 @@ const RootLayout = ({ children }: Readonly<{ children: React.ReactNode }>) => {
 					size={ 'small' }
 					type={ 'tertiary' }
 					text={ translate('components.dock.button-secondary') }
-					onClick={ (): void => redirectTo(APP_SIGNIN_URL) }
+					onClick={ (): void => redirectTo(APPS_WEB_SIGNIN_URL) }
 					onMouseOverAnimation={ false }
 				/>
 				<Button
 					size={ 'small' }
 					type={ 'primary' }
 					text={ translate('components.dock.button-primary') }
-					onClick={ (): void => redirectTo(APP_SIGNUP_URL) }
+					onClick={ (): void => redirectTo(APPS_WEB_SIGNUP_URL) }
 					onMouseOverAnimation={ false }
 					iconRight={ <IconArrowRight /> }
 				/>
@@ -177,7 +177,7 @@ gtag('config', '${GA_MEASUREMENT_ID}', { send_page_view: false });
 						<Dock smart={ false }>
 							<div className={ styles['dock-content-wrapper'] }>
 								<div className={ styles['dock-content-section'] }>
-									<Logo onClick={ (): void => redirectTo(PAGE_BASE_URL) } contrastColor={ '#000000' } />
+									<Logo onClick={ (): void => redirectTo(WEB_PAGE_BASE_URL) } contrastColor={ '#000000' } />
 									<ChevronToggle />
 									<div className={ styles['dock-content-section-menu'] }>
 										{/* <AdaptiveMenu items={ adaptiveMenu.items } /> */}

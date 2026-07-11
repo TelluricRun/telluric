@@ -1,17 +1,19 @@
 import { ConfigService } from '@/services/config.service';
 
 interface IConfigHook {
+	getWebPageUrls: () => { [key: string]: string };
+	getWebBlogUrls: () => { [key: string]: string };
+	getAppsWebUrls: () => { [key: string]: string };
 	getApiUrls: () => { [key: string]: string };
-	getAppUrls: () => { [key: string]: string };
-	getPageUrls: () => { [key: string]: string };
 };
 
 export const useConfig = (): IConfigHook => {
-	const { getApiUrls, getAppUrls, getPageUrls } = ConfigService();
+	const { getWebPageUrls, getWebBlogUrls, getAppsWebUrls, getApiUrls } = ConfigService();
 
 	return {
+		getWebPageUrls,
+		getWebBlogUrls,
+		getAppsWebUrls,
 		getApiUrls,
-		getAppUrls,
-		getPageUrls,
 	};
 };

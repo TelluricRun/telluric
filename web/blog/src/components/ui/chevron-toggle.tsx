@@ -1,4 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
+import { useConfig } from '@/utils/hooks/useConfig';
+import { useRedirect } from '@/utils/hooks/useRedirect';
 import styles from './chevron-toggle.module.css';
 
 export interface IChevronToggleProps {
@@ -6,6 +8,11 @@ export interface IChevronToggleProps {
 }
 
 export const ChevronToggle: React.FC<IChevronToggleProps> = ({ onToggle = () => {} }) => {
+	const { getWebPageUrls, getWebBlogUrls, getAppsWebUrls } = useConfig();
+	const { redirectTo } = useRedirect();
+	const { WEB_PAGE_BASE_URL } = getWebPageUrls();
+	const { WEB_BLOG_BASE_URL } = getWebBlogUrls();
+	const { APPS_WEB_BASE_URL } = getAppsWebUrls();
   const [open, setOpen] = useState(false);
   const ref = useRef<HTMLDivElement | null>(null);
 
@@ -48,24 +55,20 @@ export const ChevronToggle: React.FC<IChevronToggleProps> = ({ onToggle = () => 
       {open && (
         <div className={styles.menu} role="menu">
           <div className={styles.menuItem}>
-			<span>portal0</span>
+			<span>add-on</span>
 			<span>Create and share customer portals</span>
 		  </div>
-		  <div className={styles.menuItem}>
-			<span>vault0</span>
+		  <div className={styles.menuItem} onClick={(): void => redirectTo(WEB_PAGE_BASE_URL)}>
+			<span>web.page</span>
+			<span>Create and share customer portals</span>
+		  </div>
+		  <div className={styles.menuItem} onClick={(): void => redirectTo(WEB_BLOG_BASE_URL)}>
+			<span>web.blog</span>
 			<span>Sell your sheets data</span>
 		  </div>
-		  <div className={styles.menuItem}>
-			<span>invoice0</span>
+		  <div className={styles.menuItem} onClick={(): void => redirectTo(APPS_WEB_BASE_URL)}>
+			<span>apps.web</span>
 			<span>Automate invoice generation</span>
-		  </div>
-		  <div className={styles.menuItem}>
-			<span>datastore0</span>
-			<span>Share and sell digital assets</span>
-		  </div>
-		  <div className={styles.menuItem}>
-			<span>board0</span>
-			<span>Create and collaborate on boards</span>
 		  </div>
         </div>
       )}
