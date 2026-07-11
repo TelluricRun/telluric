@@ -18,10 +18,10 @@ interface IStandardsProps {
 };
 
 const Standards: React.FC<IStandardsProps> = ({ items }) => {
-	const { getAppUrls } = useConfig();
+	const { getAppsWebUrls } = useConfig();
 	const { redirectTo } = useRedirect();
 	const { i18n } = useLocale();
-	const { APP_SIGNUP_URL } = getAppUrls();
+	const { APPS_WEB_SIGNUP_URL } = getAppsWebUrls();
 	const { getRobotoFont } = useFont();
 	const robotoFont = getRobotoFont();
 
@@ -37,7 +37,7 @@ const Standards: React.FC<IStandardsProps> = ({ items }) => {
 						<Button
 							type={ 'secondary' }
 							text={ i18n('components.standards.button-primary') }
-							onClick={ () => redirectTo(APP_SIGNUP_URL) }
+							onClick={ () => redirectTo(APPS_WEB_SIGNUP_URL) }
 						/>
 					</div>
 					<div className={ styles.standardsContentSectionColumn }>

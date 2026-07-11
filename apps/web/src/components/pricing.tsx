@@ -24,12 +24,12 @@ interface IPricingTier {
 };
 
 const Pricing: React.FC = () => {
-	const { getAppUrls } = useConfig();
+	const { getAppsWebUrls } = useConfig();
 	const { redirectTo } = useRedirect();
 	const { i18n } = useLocale();
 	const { getFigtreeFont } = useFont();
 	const figtreeFont = getFigtreeFont();
-	const { APP_SIGNUP_URL } = getAppUrls();
+	const { APPS_WEB_SIGNUP_URL } = getAppsWebUrls();
 
 	const pricingTiers: IPricingTier[] = [
 		{
@@ -133,7 +133,7 @@ const Pricing: React.FC = () => {
 												size={ 'small' }
 												type={ tier.popular ? 'primary' : 'secondary' }
 												text={ tier.buttonText }
-												onClick={ () => redirectTo(APP_SIGNUP_URL) }
+												onClick={ () => redirectTo(APPS_WEB_SIGNUP_URL) }
 												onMouseOverAnimation={ false }
 											/>
 										</div>

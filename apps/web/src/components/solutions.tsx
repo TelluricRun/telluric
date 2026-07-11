@@ -19,9 +19,9 @@ interface ISolutionsProps {
 };
 
 const Solutions: React.FC<ISolutionsProps> = ({ items }) => {
-	const { getAppUrls } = useConfig();
+	const { getAppsWebUrls } = useConfig();
 	const { i18n } = useLocale();
-	const { APP_SIGNUP_URL } = getAppUrls();
+	const { APPS_WEB_SIGNUP_URL } = getAppsWebUrls();
 	const { getRobotoFont } = useFont();
 	const robotoFont = getRobotoFont();
 
@@ -83,7 +83,7 @@ const Solutions: React.FC<ISolutionsProps> = ({ items }) => {
 												}
 												<div onClick={ e => e.stopPropagation() }>
 													<Link
-														href={ APP_SIGNUP_URL }
+														href={ APPS_WEB_SIGNUP_URL }
 														type={ 'secondary' }
 														size={ 'big' }
 														text={ i18n('components.solutions.link-primary') }

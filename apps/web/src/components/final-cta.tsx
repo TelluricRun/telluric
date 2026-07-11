@@ -8,12 +8,12 @@ import { useLocale } from '@/utils/hooks/useLocale';
 import { useFont } from '@/utils/hooks/useFont';
 
 const FinalCta: React.FC = () => {
-	const { getAppUrls } = useConfig();
+	const { getAppsWebUrls } = useConfig();
 	const { redirectTo } = useRedirect();
 	const { i18n } = useLocale();
 	const { getFigtreeFont } = useFont();
 	const figtreeFont = getFigtreeFont();
-	const { APP_SIGNUP_URL } = getAppUrls();
+	const { APPS_WEB_SIGNUP_URL } = getAppsWebUrls();
 
 	return (
 		<>
@@ -29,7 +29,7 @@ const FinalCta: React.FC = () => {
 								size={ 'large' }
 								type={ 'primary' }
 								text={ i18n('components.finalCta.button-primary') }
-								onClick={ () => redirectTo(APP_SIGNUP_URL) }
+								onClick={ () => redirectTo(APPS_WEB_SIGNUP_URL) }
 								onMouseOverAnimation={ false }
 							/>
 						</div>

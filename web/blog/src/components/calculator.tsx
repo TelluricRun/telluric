@@ -14,12 +14,12 @@ interface ICountryInput {
 };
 
 const Calculator: React.FC = () => {
-	const { getAppUrls } = useConfig();
+	const { getAppsWebUrls } = useConfig();
 	const { redirectTo } = useRedirect();
 	const { i18n } = useLocale();
 	const { getFigtreeFont } = useFont();
 	const figtreeFont = getFigtreeFont();
-	const { APP_SIGNUP_URL } = getAppUrls();
+	const { APPS_WEB_SIGNUP_URL } = getAppsWebUrls();
 
 	const [homeCountry, setHomeCountry] = useState<string>('');
 	const [countries, setCountries] = useState<ICountryInput[]>([
@@ -131,7 +131,7 @@ const Calculator: React.FC = () => {
 												size={ 'medium' }
 												type={ 'primary' }
 												text={ i18n('components.calculator.cta-button') }
-												onClick={ () => redirectTo(APP_SIGNUP_URL) }
+												onClick={ () => redirectTo(APPS_WEB_SIGNUP_URL) }
 												onMouseOverAnimation={ false }
 											/>
 										</div>

@@ -14,10 +14,10 @@ interface IHeroProps {
 };
 
 const Hero: React.FC<IHeroProps> = ({ scrollToExplore }: IHeroProps) => {
-	const { getAppUrls } = useConfig();
+	const { getAppsWebUrls } = useConfig();
 	const { redirectTo } = useRedirect();
 	const { i18n } = useLocale();
-	const { APP_SIGNUP_URL } = getAppUrls();
+	const { APPS_WEB_SIGNUP_URL } = getAppsWebUrls();
 	const { getFigtreeFont } = useFont();
 	const figtreeFont = getFigtreeFont();
 
@@ -124,7 +124,7 @@ const Hero: React.FC<IHeroProps> = ({ scrollToExplore }: IHeroProps) => {
 							<Button
 								size={ 'small' }
 								text={ i18n('components.hero.button-primary') }
-								onClick={ (): void => redirectTo(APP_SIGNUP_URL) }
+								onClick={ (): void => redirectTo(APPS_WEB_SIGNUP_URL) }
 								iconRight={ <IconArrowRight/> }
 								onMouseOverAnimation={ false }
 							/>
@@ -132,7 +132,7 @@ const Hero: React.FC<IHeroProps> = ({ scrollToExplore }: IHeroProps) => {
 								size={ 'small' }
 								type={ 'secondary' }
 								text={ i18n('components.hero.button-secondary') }
-								onClick={ (): void => redirectTo(APP_SIGNUP_URL) }
+								onClick={ (): void => redirectTo(APPS_WEB_SIGNUP_URL) }
 								iconRight={ <IconArrowRight/> }
 								onMouseOverAnimation={ false }
 							/>
