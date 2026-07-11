@@ -1,0 +1,436 @@
+{
+	"layouts": {
+		"root": {
+			"metadata": {
+				"title": "portal0"
+			}
+		}
+	},
+	"pages": {},
+	"components": {
+		"dock": {
+			"button-primary": "Start 7-Day Free Trial",
+			"button-secondary": "Sign In",
+			"button-tertiary": "Application" 
+		},
+		"hero": {
+			"title-primary-first": "Add delightful UIs",
+			"title-primary-second": "over your data",
+			"title-secondary-1": "Google Workspace",
+			"title-secondary-2": "Microsoft 365",
+            "title-secondary-3": "Notion & Airtable",
+			"description-primary": "The presentation layer for your data-native workflows. Instantly transform your source of truth into secure, high-end interfaces.",
+			"description-secondary": "☁️ Google Workspace Native 🎯 Focused on simplicity ⚙️ Designed for real workflows",
+			"button-primary": "Start 7-Day Free Trial",
+			"button-secondary": "Learn how it works"
+		},
+		"sponsor": {
+			"description-primary": "Early interest from people working at"
+		},
+		"scroll-text": {
+			"quote": "Business owners want the control of Sheets with the polish of a client portal—but every existing option forces a context switch.",
+			"author": "Cristian Rusu",
+			"position": "Founder/CTO - portal0"
+		},
+		"market": {
+			"section-tag": "/ how it works /",
+			"title-primary": "Attain zero tax anxiety",
+			"market-one": {
+				"description": "Money saved",
+				"title": "90%"
+			},
+			"market-two": {
+				"description": "Time saved",
+				"title": "99%"
+			},
+			"market-three": {
+				"description": "Code ownership",
+				"title": "100%"
+			},
+			"market-four": {
+				"description": "Data ownership",
+				"title": "100%"
+			}
+		},
+		"steps": {
+			"title-primary": "AI în 4 pași simpli",
+			"title-secondary": "Automatizează-ți fluxul de lucru în mai puțin de 10 minute.",
+			"button-primary": "Creează cont",
+			"step-one": {
+				"name": "Initializează",
+				"description": "Creezi contul și te loghezi. Ai nevoie doar de un email și o parolă."
+			},
+			"step-two": {
+				"name": "Integrează",
+				"description": "Completezi detaliile despre afacere, curse, prețuri și întrebări frecvente."
+			},
+			"step-three": {
+				"name": "Plătește",
+				"description": "Efectuezi plata pentru a obține o licență permanentă. Nu există taxe ascunse sau costuri lunare."
+			},
+			"step-four": {
+				"name": "Lansează",
+				"description": "Apeși 'Instalează' și agentul tău AI e gata."
+			}
+		},
+		"standards": {
+			"title-primary": "We standardize",
+			"title-secondary": "high-quality",
+			"button-primary": "Get started",
+			"feature-one": {
+				"name": "Accessibility",
+				"description": "Inclusive design"
+			},
+			"feature-two": {
+				"name": "Cookies",
+				"description": "Transparent user experience"
+			},
+			"feature-three": {
+				"name": "GDPR",
+				"description": "Top-notch data privacy"
+			},
+			"feature-four": {
+				"name": "Responsive",
+				"description": "Seamless adaptation to any device"
+			},
+			"feature-five": {
+				"name": "SEO",
+				"description": "Boosted online visibility"
+			},
+			"feature-six": {
+				"name": "Security",
+				"description": "Robust safeguard against cyber threats"
+			},
+			"feature-seven": {
+				"name": "Internationalization",
+				"description": "Support for global reach"
+			},
+			"feature-eight": {
+				"name": "Customization",
+				"description": "Flexibility and uniqueness"
+			}
+		},
+		"why": {
+			"title-primary": "Why",
+			"title-secondary": "Ready Software",
+			"provider-one": "Agency/freelancer",
+			"provider-two": "No/low code platform",
+			"category-one": {
+				"name": "Ownership",
+				"items": {
+					"item-one": "Infrastructure",
+					"item-two": "Code",
+					"item-three": "Data"
+				}
+			},
+			"category-two": {
+				"name": "Quality",
+				"items": {
+					"item-one": "Infrastructure",
+					"item-two": "Code",
+					"item-three": "Automatic updates"
+				}
+			},
+			"category-three": {
+				"name": "Backup",
+				"items": {
+					"item-one": "Settings and configurations",
+					"item-two": "Code and git history"
+				}
+			},
+			"category-four": {
+				"name": "Costs",
+				"items": {
+					"item-one": "Low, affordable prices",
+					"item-two": "Reduced implementation time"
+				}
+			},
+			"category-five": {
+				"name": "Ease",
+				"items": {
+					"item-one": "No endless discussions",
+					"item-three": "Intuitive administration panel",
+					"item-two": "Automated cloud implementation"
+				}
+			},
+			"category-six": {
+				"name": "Customization",
+				"items": {
+					"item-one": "Flexible appearance and themes",
+					"item-two": "Custom business logic"
+				}
+			},
+			"category-seven": {
+				"name": "Scalability",
+				"items": {
+					"item-one": "Auto-scaling infrastructure",
+					"item-two": "Extensible code base",
+					"item-three": "Cloud cost monitoring"
+				}
+			}
+		},
+		"solutions": {
+			"title-primary": "Software solutions",
+			"title-secondary": "Business ready",
+			"link-primary": "See all solutions",
+			"solution-one": {
+				"name": "Transport reservations",
+				"description": "For passenger, parcel, and freight transport companies.",
+				"features": {
+					"feature-one": "Reservation system",
+					"feature-two": "Calendar",
+					"feature-three": "Online payments",
+					"feature-four": "SMS and email notifications",
+					"feature-five": "CRM",
+					"feature-six": "Blog",
+					"feature-seven": "Live chat",
+					"feature-eight": "Route and vehicle manager",
+					"feature-nine": "Partner agents",
+					"feature-ten": "AWB system"
+				}
+			},
+			"solution-two": {
+				"name": "Medical appointments",
+				"description": "For human and veterinary clinics and medical centers.",
+				"features": {
+					"feature-one": "Appointment system",
+					"feature-two": "Calendar",
+					"feature-three": "Online payments",
+					"feature-four": "SMS and email notifications",
+					"feature-five": "CRM",
+					"feature-six": "Blog",
+					"feature-seven": "Live chat",
+					"feature-eight": "Telemedicine"
+				}
+			}
+		},
+		"usage": {
+			"title-primary": "Real results",
+			"title-secondary": "Real reviews",
+			"testimonial-one": {
+				"content": "With the help of the Ready Software platform, we have optimized internal processes and automated repetitive tasks. The rapid implementation in the cloud and excellent support have allowed us to focus on growing our business instead of wasting precious time managing IT infrastructure.",
+				"author": {
+					"photo": "1",
+					"name": "Alexandra Andronache",
+					"title": "Director of Logistics Operations"
+				}
+			},
+			"testimonial-two": {
+				"content": "Ready Software provided us with a scalable and customized solution that perfectly met our needs. The adaptability to different devices and easy integration with our existing systems were crucial factors in choosing this platform. Highly recommended!",
+				"author": {
+					"photo": "2",
+					"name": "Andrei Ionescu",
+					"title": "Director of Business Development"
+				}
+			},
+			"testimonial-three": {
+				"content": "We were impressed by how quickly the software was implemented in our cloud without issues or delays. Now we can manage all operations through an intuitive admin panel, and our customers benefit from a transparent and superior quality user experience. Ready Software has helped us expand our online visibility and protect against cyber threats.",
+				"author": {
+					"photo": "3",
+					"name": "Elena Gheorghe",
+					"title": "Customer Relations Manager"
+				}
+			},
+			"testimonial-four": {
+				"content": "From customizing themes and business logic to monitoring cloud costs and automatic updates, Ready Software provided everything we needed to quickly and efficiently adapt to market demands. Support for internationalization allowed us to expand globally, and robust security ensures our data is always protected.",
+				"author": {
+					"photo": "4",
+					"name": "Victor Dumitrescu",
+					"title": "Marketing and Branding Director"
+				}
+			},
+			"testimonial-five": {
+				"content": "With Ready Software, we not only reduced costs and implementation time, but we also managed to offer our clients an excellent user experience. The flexibility and uniqueness of their solutions allowed us to customize every aspect of the platform to perfectly reflect our brand and specific needs.",
+				"author": {
+					"photo": "5",
+					"name": "Ioana Mihai",
+					"title": "Data and Strategy Analyst"
+				}
+			}
+		},
+		"showcase": {
+			
+		},
+		"incentive": {
+			"title-primary": "Ce face agentul AI pentru tine?",
+			"title-secondary": "Features",
+			"button-primary": "Creează cont",
+			"button-secondary": "Vreau abonament",
+			"incentive-one": {
+				"title": "AI direct în WhatsApp",
+				"description": "Revoluționează modul în care comunici! Agentul tău AI răspunde automat și inteligent pe WhatsApp, 24/7, fără ca tu să miști un deget."
+			},
+			"incentive-two": {
+				"title": "Preia rezervări și plăți non-stop",
+				"description": "Simplifică-ți viața. Clienții tăi pot rezerva și plăti direct prin WhatsApp, la orice oră, de oriunde."
+			},
+			"incentive-three": {
+				"title": "Zero clienți pierduți",
+				"description": "Fiecare solicitare devine o oportunitate! Asistentul tău transformă întrebările în rezervări confirmate, asigurându-te că nu mai ratezi niciun client."
+			},
+			"incentive-four": {
+				"title": "Economisește timp prețios — tu doar conduci",
+				"description": "Lasă agentul să gestioneze comunicarea și administrarea. Tu te concentrezi pe drum și pe dezvoltarea afacerii."
+			},
+			"incentive-five": {
+				"title": "Instalare ultra-rapidă, o singură plată, fără bătăi de cap",
+				"description": "Obții un asistent AI complet funcțional în WhatsApp, instalat direct în cloud-ul tău, în mai puțin de 10 minute. Control total, tu deții infrastructura, fără dependență de platforme SaaS. O singură plată, fără costuri ascunse."
+			},
+			"incentive-extra": {
+				"title1": "Suport Tehnic Dedicat",
+				"description1": "Cu abonamentul nostru opțional, ești mereu acoperit. Nu doar că primești asistență rapidă pentru orice problemă tehnică, dar te și ghidăm pas cu pas în implementarea completă a agentului AI, de la configurarea inițială până la optimizarea performanței. Poți deschide un ticket de suport direct din dashboard-ul tău dedicat, oricând ai nevoie, iar echipa noastră îți va răspunde prompt.",
+				"title2": "Update-uri și Funcționalități Noi",
+				"description2": "Industria AI evoluează rapid, iar botul tău va ține pasul! Prin abonament, te asiguri că primești în permanență cele mai recente update-uri de securitate, îmbunătățiri de performanță și, mai ales, noi funcționalități AI. Astfel, botul tău rămâne la vârful tehnologiei, oferind servicii din ce în ce mai inteligente și eficiente clienților tăi.",
+				"title3": "Actualizare Bază de Cunoștințe",
+				"description3": "Botul tău este la fel de inteligent ca informațiile pe care le are! Abonamentul îți oferă flexibilitatea de a-i actualiza și extinde cu ușurință baza de cunoștințe. Ai un serviciu nou? S-au schimbat prețurile? Vrei să răspundă la întrebări specifice? Poți antrena botul rapid și intuitiv cu informații noi, direct din interfața noastră, asigurându-te că răspunde întotdeauna corect și complet.",
+				"title4": "Monitorizare Simplificată",
+				"description4": "Ai control total și vizibilitate deplină asupra interacțiunilor botului. Prin intermediul UI-ului intuitiv al platformei noastre, te poți conecta securizat la baza de date a botului tău din cloud-ul personal. Aici, poți vizualiza în timp real toate mesajele și conversațiile gestionate de bot, analizând performanța acestuia și identificând oportunități de îmbunătățire a serviciilor tale."
+			}
+		},
+		"features": {
+			"title-primary": "Beyond the Buzz:",
+			"title-secondary": "— Real Benefits for",
+			"title-tertiary": "Your Business",
+			"description-primary": "Stop worrying about 'laptop squatters' and start celebrating new revenue. Segue helps you turn empty seats into reliable income, seamlessly integrating with your existing operations. We're not just about filling tables; we're about optimizing your space and enhancing your community, all while keeping your core business thriving.",
+			"feature-one": {
+				"name": "Boost Your Bottom Line",
+				"description": "Monetize every seat, especially during off-peak hours, turning potential lost revenue into consistent profit. Our flexible pricing ensures you always get value."
+			},
+			"feature-two": {
+				"name": "Optimize Your Space",
+				"description": "Designate specific tables for remote work, ensuring you always have space for your regular customers while attracting a new, high-value demographic."
+			},
+			"feature-three": {
+				"name": "Attract a New Customer Base",
+				"description": "Tap into the growing global community of digital nomads and remote workers actively seeking reliable, work-friendly environments."
+			},
+			"feature-four": {
+				"name": "Effortless Management",
+				"description": "Our intuitive platform handles bookings, payments, and availability updates, so you can focus on what you do best: running your cafe."
+			},
+			"feature-five": {
+				"name": "Enhance Your Cafe's Reputation",
+				"description": "Become a known destination for productivity and community, fostering a loyal base of repeat customers who appreciate your work-friendly environment."
+			}
+		},
+		"brand": {
+			"title-primary": "Have a project?",
+			"link-primary": "Launch it now"
+		},
+		"sidebar": {
+			
+		},
+		"footer": {
+			"column-one": {
+				"company": "Company",
+				"about": "About us",
+				"careers": "Careers",
+				"faq": "FAQ"
+			},
+			"column-two": {
+				"social": "Social"
+			},
+			"column-three": {
+				"contact": "Contact",
+				"support": "Support",
+				"address": "Address"
+			}
+		},
+		"problem": {
+			"title-primary": "Escape the Legal and Tax Maze of the Modern B2B Freelancer.",
+			"description-primary": "As a solopreneur, your time should be spent on clients and growth, not on global compliance. The freedom of running your own business comes with a hidden cost: a tangle of international tax laws, residency rules, and endless paperwork.",
+			"description-secondary": "You're the founder and the CEO. Stop worrying about audit risks and missed deadlines, and start focusing on your work."
+		},
+		"solution": {
+			"title-primary": "The Operating System for Your Global Business.",
+			"description-primary": "Tropical is your end-to-end hub for staying compliant, planning smart, and managing your one-man enterprise from anywhere in the world.",
+			"step-1-title": "Track Your Entities.",
+			"step-1-description": "Create a dedicated workspace for each of your businesses. Our system keeps a real-time record of your financials and compliance obligations for each entity.",
+			"step-2-title": "Optimize Your Global Status.",
+			"step-2-description": "Effortlessly log your travels and stays. Our smart system uses this data to provide AI-powered guidance on tax residency and visa opportunities.",
+			"step-3-title": "Get Proactive Insights.",
+			"step-3-description": "Never miss a deadline again. Get proactive alerts on upcoming tax filings, legal requirements, and visa expirations tailored to each of your businesses."
+		},
+		"testimonials": {
+			"title-primary": "Don't Just Take Our Word For It.",
+			"testimonial-1-content": "Running a solo consulting business with clients in three different countries was a nightmare. Tropical has been my lifesaver, giving me back my peace of mind and letting me focus on the work, not the paperwork.",
+			"testimonial-1-author-name": "Sarah L.",
+			"testimonial-1-author-title": "Freelance Consultant",
+			"testimonial-2-content": "As a B2B contractor, I'm responsible for everything myself. My clients don't handle my taxes. Tropical is the only tool that has made managing my international compliance simple.",
+			"testimonial-2-author-name": "Mike T.",
+			"testimonial-2-author-title": "Software Contractor"
+		},
+		"pricing": {
+			"title-primary": "Pricing for the CEO of One.",
+			"title-secondary": "Our tiers are designed to grow with your business, without the complexity.",
+			"tier-1-name": "Pro Monthly",
+			"tier-1-price": "$59",
+			"tier-1-period": "/ month",
+			"tier-1-discount": "Billed monthly",
+			"tier-1-button": "Start Your 3-Day Trial",
+			"tier-1-feature-1": "One company/entity workspace",
+			"tier-1-feature-2": "Monthly AI suggestions and reporting",
+			"tier-1-feature-3": "Full access to the compliance hub",
+			"tier-1-feature-4": "Tax residency tracker and visa alerts",
+			"tier-1-feature-5": "Secure document storage",
+			"tier-2-name": "Pro Annual",
+			"tier-2-price": "$590",
+			"tier-2-period": "/ year",
+			"tier-2-discount": "2 months free (10 months price)",
+			"tier-2-button": "Start Your 3-Day Trial",
+			"tier-2-feature-1": "One company/entity workspace",
+			"tier-2-feature-2": "Monthly AI suggestions and reporting",
+			"tier-2-feature-3": "Full access to the compliance hub",
+			"tier-2-feature-4": "Tax residency tracker and visa alerts",
+			"tier-2-feature-5": "Secure document storage",
+			"tier-3-name": "Business Monthly",
+			"tier-3-price": "$149",
+			"tier-3-period": "/ month",
+			"tier-3-discount": "Billed monthly",
+			"tier-3-button": "Start Your 3-Day Trial",
+			"tier-3-feature-1": "Up to five company/entity workspaces",
+			"tier-3-feature-2": "Weekly AI suggestions and daily alerts",
+			"tier-3-feature-3": "Advanced financial and compliance reporting",
+			"tier-3-feature-4": "Full legal document library",
+			"tier-3-feature-5": "Priority support",
+			"tier-4-name": "Business Annual",
+			"tier-4-price": "$1490",
+			"tier-4-period": "/ year",
+			"tier-4-discount": "2 months free (10 months price)",
+			"tier-4-button": "Start Your 3-Day Trial",
+			"tier-4-feature-1": "Up to five company/entity workspaces",
+			"tier-4-feature-2": "Weekly AI suggestions and daily alerts",
+			"tier-4-feature-3": "Advanced financial and compliance reporting",
+			"tier-4-feature-4": "Full legal document library",
+			"tier-4-feature-5": "Priority support"
+		},
+		"faq": {
+			"title-primary": "Your Questions, Answered.",
+			"question-1": "Is the 3-day trial really free?",
+			"answer-1": "Yes, it is. We don't ask for a credit card up front. You get full access to all features to experience the value for yourself before you decide to subscribe.",
+			"question-2": "How does Tropical help with my taxes?",
+			"answer-2": "We provide strategic guidance on tax residency and help you organize your finances to prepare for tax filings. We are not a tax firm, but we give you all the tools and insights you need to work with one or file with confidence.",
+			"question-3": "Can I use this if I work for a company?",
+			"answer-3": "Tropical is designed for contractors and freelancers who are responsible for their own tax and compliance. If your employer handles all your compliance for you, you may not get the full value of the app.",
+			"question-4": "Is my data secure?",
+			"answer-4": "Absolutely. We use industry-standard encryption and follow strict security protocols to ensure your financial and personal data are always protected."
+		},
+		"finalCta": {
+			"title-primary": "Stop Worrying. Start Building.",
+			"description-primary": "Take control of your business and your freedom today.",
+			"button-primary": "Start Your 3-Day Trial"
+		},
+		"calculator": {
+			"title-primary": "Tax Residency Risk Calculator",
+			"description-primary": "Calculate your potential tax residency risk based on your travel patterns.",
+			"home-country-label": "Your Home Country",
+			"home-country-placeholder": "Enter your home country",
+			"countries-label": "Countries Visited",
+			"country-placeholder": "Country name",
+			"days-placeholder": "Days spent",
+			"add-country": "Add Another Country",
+			"calculate-button": "Calculate My Risk",
+			"cta-button": "Get Personalized Report - Start Free Trial"
+		}
+	}
+}

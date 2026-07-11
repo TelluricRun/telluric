@@ -1,0 +1,18 @@
+.spacerWrapper {
+	display: flex;
+	height: 50px;
+	background-color: #FFFFFF;
+	background-image: linear-gradient(to right, var(--glacier-darker) 5px, transparent 5px);
+	background-repeat: repeat-x;
+	background-size: 10px 1px;
+}
+
+.topSpacer {
+	background-position: center top;
+	border-bottom: 1px solid var(--glacier-dark);
+}
+
+.bottomSpacer {
+	background-position: center bottom;
+	border-top: 1px solid var(--glacier-dark);
+}

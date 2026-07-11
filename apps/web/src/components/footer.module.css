@@ -1,0 +1,97 @@
+.footerContentWrapper {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	gap: 45px;
+	align-items: center;
+	background-color: #FFFFFF;
+	padding: 45px 15px;
+	border-top: 1px solid var(--glacier-dark);
+	border-bottom: 1px solid var(--glacier-dark);
+}
+
+.footerContentSection {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 100%;
+	max-width: 1400px;
+	gap: 45px;
+}
+
+.footerContentSectionRow {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 45px;
+}
+
+.footerContentSectionRowItem {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	gap: 15px;
+}
+
+.footerContentSection:first-child .footerContentSectionRow:first-child {
+	flex-direction: column;
+	gap: 15px;
+}
+
+.footerContentSection:first-child .footerContentSectionRow:first-child > h4 {
+	padding-left: 2px;
+}
+
+.footerContentSection:first-child .footerContentSectionRow:first-child .footerContentSectionRowItem {
+	flex-direction: row;
+}
+
+.footerContentSection:first-child .footerContentSectionRow:first-child .footerContentSectionRowItem > div {
+	width: 36px;
+	height: 36px;
+	line-height: 36px;
+	vertical-align: middle;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	border: 2px solid var(--glacier);
+	cursor: pointer;
+	transition: all ease-out .25s;
+}
+
+.footerContentSection:first-child .footerContentSectionRow:first-child .footerContentSectionRowItem > div:hover {
+	background-color: var(--glacier-light);
+}
+
+.footerContentSectionRowItem > * {
+	font-size: 1rem;
+	transition: .25s;
+	color: var(--text-primary);
+	font-weight: 400;
+}
+
+.footerContentSectionRowItem > *:first-child {
+	color: #000000;
+	font-weight: 600;
+}
+
+.footerContentSectionRowItem > *:not(:first-child):hover {
+	cursor: pointer;
+	color: #000000;
+}
+
+.footerContentSection:last-child p {
+	color: var(--text-primary);
+	font-weight: 400;
+	font-size: 0.8rem;
+}
+
+@media only screen and (max-width: 800px) {
+	.footerContentSection {
+		flex-direction: column;
+	}
+
+	.footerContentSectionRow {
+		flex-direction: column;
+	}
+}

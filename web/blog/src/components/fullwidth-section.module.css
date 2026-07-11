@@ -1,0 +1,143 @@
+.wrapper {
+  width: 100%;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0;
+  border-top: 1px solid var(--glacier-dark);
+}
+
+.container {
+  width: calc(100% - 30px);
+  max-width: 1070px;
+  padding: 0 15px;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.stack {
+  width: 100%;
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.stack:nth-child(2n) {
+  max-width: 900px;
+}
+
+.stack h3, .stack h4 {
+	font-weight: 400;
+	line-height: 1.5;
+}
+
+.table {
+  width: 100%;
+  border: 1px solid var(--glacier-dark);
+  display: flex;
+  flex-direction: column;
+}
+
+.tableHeader {
+	height: 50px;
+	line-height: 50px;
+	padding: 0 15px;
+	display: flex;
+	gap: 15px;
+	align-items: center;
+	border-bottom: 1px solid var(--glacier-dark);
+	background-color: var(--glacier-light);
+}
+
+.tableHeader h4 {
+	font-weight: 500;
+}
+
+.tableHeader h4:nth-child(2n){
+	font-weight: 400;
+	color: var(--text-primary);
+}
+
+.tableBody {
+	display: flex;
+}
+
+.tableBodyLeft, .tableBodyCenter, .tableBodyRight {
+	display: flex;
+	flex-direction: column;
+}
+
+.tableBodyLeft {
+	width: 200px;
+	border-right: 1px solid var(--glacier-dark);
+	display: flex;
+	flex-direction: column;
+}
+
+.tableBodyCenter {
+	width: 10px;
+	border-right: 1px solid var(--glacier-dark);
+	background-color: #FFFFFF;
+	background-image: var(--diagonal-lines);
+}
+
+.tableBodyRight {
+	flex: 1 1 0;
+	padding: 30px;
+	display: flex;
+	flex-direction: column;
+}
+
+.tableBodyLeft .tableItemTab {
+	height: 50px;
+	line-height: 50px;
+	border-bottom: 1px solid var(--glacier-dark);
+	display: flex;
+	color: var(--text-primary);
+	user-select: none;
+	cursor: pointer;
+}
+
+.tableItemTabActive {
+  background: linear-gradient(to right, rgba(65, 105, 225, 0.25) 33%, transparent 100%);
+}
+
+.tableItemTabActive .tableItemTabName {
+	color: #000000;
+}
+
+.tableBodyLeft .tableItemTab .tableItemTabIcon {
+	width: 50px;
+	height: 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border-left: 3px solid transparent;
+}
+
+.tableItemTabActive .tableItemTabIcon {
+	border-left-color: royalblue !important;
+}
+
+.tableBodyLeft .tableItemTab .tableItemTabName {
+	flex: 1 1 0;
+	height: 50px;
+	display: flex;
+}
+
+.tableBodyLeft div:last-child {
+	border-bottom: none;
+}
+
+.tableBodyRight h4 {
+	font-weight: 500;
+	line-height: 1.5;
+	font-style: italic;
+}

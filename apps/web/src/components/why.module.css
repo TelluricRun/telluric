@@ -1,0 +1,107 @@
+.whyContentWrapper {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	background-color: #FFFFFF;
+	padding: 150px 0;
+	gap: 75px;
+}
+
+.whyContentContainer {
+	display: flex;
+	width: calc(100% - 30px);
+	max-width: 1400px;
+	padding: 0 15px;
+	flex-direction: column;
+}
+
+.whyContentSection {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	text-align: center;
+}
+
+.whyContentSection h2:last-child {
+	color: var(--glacier-darker);
+}
+
+.whyContentContainer:last-child {
+	overflow-x: auto;
+	overflow-y: hidden;
+	white-space: nowrap;
+	scroll-behavior: smooth;
+	-webkit-overflow-scrolling: touch;
+}
+
+.whyContentContainer:last-child::-webkit-scrollbar {
+	height: 0;
+}
+
+.whyContentContainer:last-child::-webkit-scrollbar-track {
+	background: transparent;
+}
+
+.whyTable {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	background-color: #FFFFFF;
+	overflow: auto;
+	border: 1px solid var(--cinder);
+}
+
+.whyTableRow {
+	display: flex;
+	background-color: #FFFFFF;
+	height: 50px;
+	line-height: 50px;
+	border-top: 1px solid var(--cinder);
+}
+
+.whyTable > .whyTableRow:first-child {
+	font-size: 1.25rem;
+	font-weight: 500;
+}
+
+.whyTable > .whyTableRow:first-child > .whyTableRowItem:last-child {
+	background-color: var(--emerald-flat-light);
+}
+
+.whyTableRowCategory {
+	border-top: 1px solid var(--cinder);
+	display: flex;
+	flex-direction: column;
+}
+
+.whyTableRowCategory .whyTableRow:first-child {
+	background-color: var(--glacier-light);
+	font-size: 1.25rem;
+	font-weight: 500;
+}
+
+.whyTableRow:nth-child(1) {
+	border-top: none;
+}
+
+.whyTableRowItem {
+	flex: 0 0 275px;
+	min-width: 275px;
+	max-width: 275px;
+	border-left: 1px solid var(--cinder);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	overflow: hidden;
+	padding: 0 15px;
+}
+
+.whyTableRowItem:nth-child(1) {
+	flex: 1;
+	max-width: none;
+	min-width: 275px;
+	border-left: none;
+}

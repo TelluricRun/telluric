@@ -1,8 +1,14 @@
 {
-  "name": "@telluric/apps/web",
+  "name": "@telluric/apps.web",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "next dev -p 3003",
+    "build": "next build"
+  },
   "dependencies": {
-    "@telluric/ui": "workspace:*",
-    "@telluric/core": "workspace:*",
+    "@telluric/packages.ui": "*",
+    "@telluric/packages.core": "*",
     "next": "latest",
     "react": "latest"
   }

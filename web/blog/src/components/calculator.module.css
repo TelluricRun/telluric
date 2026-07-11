@@ -1,0 +1,177 @@
+.calculatorContentWrapper {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	background-color: #FFFFFF;
+	padding: 150px 0;
+}
+
+.calculatorContentContainer {
+	display: flex;
+	width: calc(100% - 30px);
+	max-width: 800px;
+	padding: 0 15px;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.calculatorContentSection {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	text-align: center;
+	gap: 60px;
+	width: 100%;
+}
+
+.calculatorContentSectionHeader {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	opacity: 0;
+	animation: slideFade 1.25s ease-out forwards;
+}
+
+.calculatorContentSectionHeader h2 {
+	color: var(--dark-glare);
+}
+
+.calculatorContentSectionHeader h3 {
+	color: #000000;
+	font-size: 18px;
+	line-height: 1.6;
+	font-weight: 400;
+}
+
+.calculatorContentSectionForm {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	text-align: left;
+	opacity: 0;
+	animation: slideFadeReversed 1.25s ease-out forwards;
+	animation-delay: 0.25s;
+}
+
+.calculatorFormGroup {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.calculatorFormGroup label {
+	color: var(--dark-glare);
+	font-size: 16px;
+	font-weight: 600;
+	margin: 0;
+}
+
+.calculatorCountryRow {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	gap: 15px;
+	align-items: center;
+}
+
+.calculatorAddCountry {
+	margin-top: 10px;
+}
+
+.calculatorAddCountry > * {
+	width: auto;
+}
+
+.calculatorFormSubmit {
+	display: flex;
+	justify-content: center;
+	margin-top: 15px;
+}
+
+.calculatorFormSubmit > * {
+	width: 100%;
+	max-width: 300px;
+}
+
+.calculatorResult {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 45px;
+	background-color: #F8F9FA;
+	border-radius: 15px;
+	border-left: 4px solid var(--dark-glare);
+	opacity: 0;
+	animation: slideFade 0.5s ease-out forwards;
+}
+
+.calculatorResultContent {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	text-align: center;
+	max-width: 500px;
+}
+
+.calculatorResultContent p {
+	color: #000000;
+	font-size: 18px;
+	line-height: 1.6;
+	margin: 0;
+}
+
+.calculatorResultCta > * {
+	width: 100%;
+	max-width: 250px;
+}
+
+@keyframes slideFade {
+    from {
+        opacity: 0;
+        transform: translateY(-25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideFadeReversed {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .calculatorContentWrapper {
+        padding: 100px 0;
+    }
+
+    .calculatorContentSection {
+        gap: 45px;
+    }
+
+    .calculatorContentSectionHeader h3 {
+        font-size: 16px;
+    }
+
+    .calculatorCountryRow {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .calculatorResult {
+        padding: 30px;
+    }
+
+    .calculatorResultContent p {
+        font-size: 16px;
+    }
+}

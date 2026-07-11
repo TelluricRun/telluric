@@ -1,0 +1,222 @@
+.pricingContentWrapper {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	background-color: #FFFFFF;
+	padding: 150px 0;
+}
+
+.pricingContentContainer {
+	display: flex;
+	width: calc(100% - 30px);
+	max-width: 1400px;
+	padding: 0 15px;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.pricingContentSection {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	text-align: center;
+	gap: 75px;
+}
+
+.pricingContentSectionHeader {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	opacity: 0;
+	animation: slideFade 1.25s ease-out forwards;
+}
+
+.pricingContentSectionHeader h2 {
+	color: var(--dark-glare);
+}
+
+.pricingContentSectionHeader h3 {
+	color: #000000;
+	font-size: 20px;
+	line-height: 1.6;
+	font-weight: 400;
+}
+
+.pricingContentSectionTiers {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 20px;
+	opacity: 0;
+	animation: slideFadeReversed 1.25s ease-out forwards;
+	animation-delay: 0.25s;
+	max-width: 1200px;
+}
+
+.pricingTier {
+	display: flex;
+	flex-direction: column;
+	padding: 35px;
+	background-color: #FAFAFA;
+	border: 2px solid transparent;
+	border-radius: 15px;
+	transition: all 0.3s ease-in-out;
+	position: relative;
+	text-align: left;
+}
+
+.pricingTier:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.pricingTierPopular {
+	background-color: #FFFFFF;
+	border-color: var(--dark-glare);
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.pricingTierBadge {
+	position: absolute;
+	top: -12px;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: var(--dark-glare);
+	color: #FFFFFF;
+	padding: 8px 20px;
+	border-radius: 20px;
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.pricingTierHeader {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	margin-bottom: 30px;
+}
+
+.pricingTierHeader h4 {
+	color: var(--dark-glare);
+	font-size: 24px;
+	font-weight: 700;
+	margin: 0;
+}
+
+.pricingTierPrice {
+	display: flex;
+	align-items: baseline;
+	gap: 8px;
+}
+
+.pricingTierPriceAmount {
+	color: var(--dark-glare);
+	font-size: 48px;
+	font-weight: 700;
+	line-height: 1;
+}
+
+.pricingTierPricePeriod {
+	color: var(--glacier-darker);
+	font-size: 18px;
+	font-weight: 400;
+}
+
+.pricingTierDiscount p {
+	color: var(--glacier-darker);
+	font-size: 14px;
+	margin: 0;
+}
+
+.pricingTierFeatures {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	margin-bottom: 30px;
+	flex: 1;
+}
+
+.pricingTierFeature {
+	display: flex;
+	align-items: flex-start;
+	gap: 12px;
+	color: #000000;
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+.pricingTierButton {
+	margin-top: auto;
+}
+
+.pricingTierButton > * {
+	width: 100%;
+}
+
+@keyframes slideFade {
+    from {
+        opacity: 0;
+        transform: translateY(-25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideFadeReversed {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .pricingContentSectionTiers {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .pricingContentWrapper {
+        padding: 100px 0;
+    }
+
+    .pricingContentSection {
+        gap: 45px;
+    }
+
+    .pricingContentSectionTiers {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .pricingTier {
+        flex: none;
+        max-width: 100%;
+        padding: 30px;
+    }
+
+    .pricingTierHeader h4 {
+        font-size: 20px;
+    }
+
+    .pricingTierPriceAmount {
+        font-size: 36px;
+    }
+
+    .pricingTierPricePeriod {
+        font-size: 16px;
+    }
+
+    .pricingContentSectionHeader h3 {
+        font-size: 18px;
+    }
+}

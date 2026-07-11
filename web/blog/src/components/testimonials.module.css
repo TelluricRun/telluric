@@ -1,0 +1,164 @@
+.testimonialsContentWrapper {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	background-color: #FAFAFA;
+	padding: 150px 0;
+}
+
+.testimonialsContentContainer {
+	display: flex;
+	width: calc(100% - 30px);
+	max-width: 1200px;
+	padding: 0 15px;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.testimonialsContentSection {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	text-align: center;
+	gap: 75px;
+	max-width: 1000px;
+}
+
+.testimonialsContentSectionHeader {
+	opacity: 0;
+	animation: slideFade 1.25s ease-out forwards;
+}
+
+.testimonialsContentSectionHeader h2 {
+	color: var(--dark-glare);
+}
+
+.testimonialsContentSectionItems {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+	gap: 45px;
+	opacity: 0;
+	animation: slideFadeReversed 1.25s ease-out forwards;
+	animation-delay: 0.25s;
+}
+
+.testimonialItem {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	padding: 45px;
+	background-color: #FFFFFF;
+	border-radius: 15px;
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+	transition: all 0.3s ease-in-out;
+	text-align: left;
+}
+
+.testimonialItem:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.testimonialContent p {
+	color: #000000;
+	font-size: 18px;
+	line-height: 1.6;
+	font-style: italic;
+	margin: 0;
+}
+
+.testimonialAuthor {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+
+.testimonialAuthorPhoto {
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	overflow: hidden;
+	flex-shrink: 0;
+}
+
+.testimonialAuthorPhoto img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.testimonialAuthorInfo {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+.testimonialAuthorInfo h4 {
+	color: var(--dark-glare);
+	font-size: 16px;
+	font-weight: 700;
+	margin: 0;
+}
+
+.testimonialAuthorInfo p {
+	color: var(--glacier-darker);
+	font-size: 14px;
+	margin: 0;
+}
+
+@keyframes slideFade {
+    from {
+        opacity: 0;
+        transform: translateY(-25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideFadeReversed {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .testimonialsContentWrapper {
+        padding: 100px 0;
+    }
+
+    .testimonialsContentSection {
+        gap: 45px;
+    }
+
+    .testimonialsContentSectionItems {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .testimonialItem {
+        padding: 30px;
+    }
+
+    .testimonialContent p {
+        font-size: 16px;
+    }
+
+    .testimonialAuthor {
+        gap: 15px;
+    }
+
+    .testimonialAuthorPhoto {
+        width: 50px;
+        height: 50px;
+    }
+}

@@ -1,0 +1,320 @@
+.heroContentWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+    position: relative;
+    height: calc(calc(100vh / 3) * 2);
+    padding: 75px 0;
+}
+
+.hover-effect {
+    position: fixed;
+    z-index: 1;
+    width: 100px;
+    height: 100px;
+    background-color: var(--dark-glare);
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    filter: blur(100px);
+    mix-blend-mode: difference;
+    pointer-events: none;
+    display: none;
+}
+
+.heroContentWrapper:hover .hover-effect {
+    display: block;
+}
+
+.row {
+    flex: 1;
+    height: 100%;
+    padding: 75px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	transition: all 1.25s ease-in-out;
+	-webkit-transition: all 1.25s ease-in-out;
+    background-color: #FFFFFF;
+    border-right: 1px solid transparent;
+    position: relative;
+}
+
+.row:nth-child(7) {
+    border-right: none;
+}
+
+.rowAppear {
+    animation: fadeInBorder 1.25s ease-in-out forwards;
+}
+
+.rowFill {
+	background-color: #FFFFFF;
+	background-image: var(--diagonal-lines);
+}
+
+.rowMeld {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    position: absolute;
+    margin: auto;
+    overflow: visible;
+    bottom: -8px;
+    right: -8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.row:nth-child(7) .rowMeld {
+    display: none;
+}
+
+.heroContentAbsolute {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+    align-items: center;
+    justify-content: center;
+}
+
+.heroContentAbsoluteSmall {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+	width: 666px;
+	height: 666px;
+	border-radius: 50%;
+	top: calc(50% - 333px);
+	left: calc(50% - 333px);
+	background-image: var(--tropical-midnight);
+	filter: blur(130px);
+}
+
+.heroContentSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    padding: 0 30px;
+    text-align: center;
+    z-index: 1;
+    width: calc(100% - 60px);
+    max-width: 1320px;
+    gap: 15px;
+}
+
+.animatedText {
+    opacity: 0;
+    animation: slideFade 1.25s ease-out forwards;
+}
+
+.animatedText h1, .animatedText h2 {
+    color: var(--dark-glare);
+}
+
+.animatedText h1 > span {
+    background: linear-gradient(45deg, royalblue, cornflowerblue);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.animatedText h4 {
+    color: royalblue;
+    font-weight: 500;
+    padding: 10px 15px;
+    border: 2px solid var(--glacier);
+    border-radius: 21px;
+}
+
+.heroContentText {
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 45px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index: 1;
+    opacity: 0;
+    animation: slideFadeReversed 1.25s ease-out forwards;
+}
+
+.heroContentTextSmall {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 820px;
+    gap: 15px;
+}
+
+.heroContentButtons {
+    display: flex;
+	flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+	max-width: 580px;
+	width: 100%;
+}
+
+.heroContentButtons > div {
+    display: flex;
+	flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+	max-width: 580px;
+	width: 100%;
+}
+
+.heroContentButtons > span {
+	color: var(--text-primary);
+}
+
+.heroContentButtons h4 {
+	color: var(--text-primary);
+}
+
+.otpModal {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: 999999999999999999;
+	top: 0;
+	left: 0;
+	background-color: rgba(255, 255, 255, 0.75);
+}
+
+.otpInnerModal {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 90%;
+	max-width: 500px;
+	background-color: #FFFFFF;
+	color: #000000;
+	padding: 30px;
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.otpInnerModal > div {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.otpInnerModal > div > * {
+	display: flex;
+	gap: 15px;
+}
+
+@keyframes slideFade {
+    from {
+        opacity: 0;
+        transform: translateY(-25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideFadeReversed {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInBorder {
+    0% {
+        border-color: transparent;
+    }
+    100% {
+        border-color: var(--glacier-dark);
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+	.animatedText h1 {
+		font-size: clamp(3.3rem, 9vw, 100px);
+	}
+}
+
+@media only screen and (max-width: 800px) {
+    .heroContentAbsolute {
+        gap: 30px;
+    }
+
+	.heroContentAbsoluteSmall {
+		width: 333px;
+		height: 333px;
+		top: calc(50% - 166.5px);
+		left: calc(50% - 166.5px);
+		filter: blur(65px);
+	}
+
+	.animatedText h1 {
+		font-size: clamp(2.5rem, 8vw, 100px);
+	}
+
+	.animatedText h2 {
+		min-height: 2.5em;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+    .heroContentText {
+        gap: 30px;
+        padding: 0 30px;
+    }
+
+    .heroContentButtons {
+        flex-direction: column;
+    }
+
+    .heroContentButtons > * {
+        width: 100%;
+    }
+
+	.heroContentButtons > div > * {
+        width: 100%;
+    }
+}
+
+.heroContentButtons input {
+    transition: border-color 0.3s ease;
+    border-color: var(--glacier-darker);
+	border-radius: 30px;
+}
+
+.heroContentButtons input:focus {
+    border-color: var(--tropical-blue-royal);
+    outline: none;
+}

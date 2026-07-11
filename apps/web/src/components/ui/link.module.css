@@ -1,0 +1,46 @@
+.link {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	user-select: none;
+	font-family: var(--font-inter);
+	background-color: transparent;
+	text-decoration: none;
+	font-weight: 400;
+}
+
+.primary {
+	color: var(--emerald-light);
+}
+
+.secondary {
+	color: #000000;
+}
+
+.tertiary {
+	color: var(--midnight-light);
+}
+
+.small {
+	height: 18px;
+	line-height: 18px;
+	gap: calc(15px / 2);
+	font-size: 16px;
+}
+
+.medium {
+	height: 20px;
+	line-height: 20px;
+	gap: calc(20px / 2);
+	font-size: 18px;
+}
+
+.big {
+	height: 22px;
+	line-height: 22px;
+	gap: calc(25px / 2);
+	font-size: 20px;
+}

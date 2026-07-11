@@ -1,0 +1,204 @@
+.heroContentWrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: #FFFFFF;
+	position: relative;
+	overflow: hidden;
+	height: 65vh;
+}
+
+.row {
+	width: 100%;
+	height: 34px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-bottom: 1px solid transparent;
+	transition: all 2.5s ease-in-out;
+	background-color: #FFFFFF;
+}
+
+.rowAppear {
+	animation: fadeInBorder 1.25s ease-in-out forwards;
+}
+
+.square {
+	width: 34px;
+	height: 34px;
+	border-right: 1px solid transparent;
+	transition: all 2.5s ease-in-out;
+	background-color: #FFFFFF;
+}
+
+.square:last-child {
+	border-right: none;
+}
+
+.squareAppear {
+	animation: fadeInBorder 1.25s ease-in-out forwards;
+}
+
+.squareFill {
+	width: 24px;
+	height: 24px;
+	margin: 5px;
+	transition: all 2.5s ease-in-out;
+	background-color: #FFFFFF;
+}
+
+.squareFillInner {
+	background-color: var(--glacier-light);
+}
+
+.hover-effect {
+	position: fixed;
+	z-index: 1;
+	width: 100px;
+	height: 100px;
+	background-color: var(--dark-glare);
+	border-radius: 50%;
+	top: 0;
+	left: 0;
+	filter: blur(100px);
+	mix-blend-mode: difference;
+	pointer-events: none;
+	display: none;
+}
+
+.heroContentWrapper:hover .hover-effect {
+	display: block;
+}
+
+.heroContentAbsolute {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 45px;
+	align-items: center;
+	justify-content: center;
+}
+
+.heroContentSection {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	user-select: none;
+	padding: 0 30px;
+	text-align: center;
+	z-index: 1;
+	width: calc(100% - 60px);
+	max-width: 800px;
+}
+
+.animatedText {
+	opacity: 0;
+	animation: slideFade 1.25s ease-out forwards;
+}
+
+.animatedText h1, .animatedText h2 {
+	color: var(--dark-glare);
+}
+
+.heroContentText {
+	padding: 0 15px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	gap: 45px;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	z-index: 1;
+	opacity: 0;
+	animation: slideFadeReversed 1.25s ease-out forwards;
+}
+
+.heroContentText h3 {
+	color: #000000;
+}
+
+.heroContentTextSmall {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	max-width: 800px;
+}
+
+.heroContentButtons {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	gap: 15px;
+}
+
+@keyframes slideFade {
+	from {
+		opacity: 0;
+		transform: translateY(-25px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes slideFadeReversed {
+	from {
+		opacity: 0;
+		transform: translateY(25px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes fadeInBorder {
+	0% {
+		border-color: transparent;
+	}
+	100% {
+		border-color: var(--glacier);
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	.heroContentSection {
+		align-items: flex-start;
+		padding: 0 30px;
+	}
+
+	.heroContentAbsolute {
+		gap: 30px;
+	}
+
+	.heroContentSection h1, .heroContentSection h2 {
+		text-align: left;
+	}
+
+	.heroContentText h3 {
+		text-align: left;
+	}
+
+	.heroContentText {
+		gap: 30px;
+		padding: 0 30px;
+	}
+
+	.heroContentButtons {
+		flex-direction: column;
+		width: 100%;
+	}
+
+	.heroContentButtons > * {
+		width: 100%;
+	}
+}

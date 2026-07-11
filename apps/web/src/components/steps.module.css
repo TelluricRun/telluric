@@ -1,0 +1,148 @@
+.stepsContentWrapper {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	background-color: #FFFFFF;
+	padding: 100px 0;
+}
+
+.stepsContentContainer {
+	display: flex;
+	width: calc(100% - 30px);
+	max-width: 1400px;
+	padding: 0 15px;
+	gap: 45px;
+}
+
+.stepsContentSection {
+	display: flex;
+	flex-direction: column;
+	flex: 1 1 0;
+	flex-wrap: wrap;
+}
+
+.stepsContentSection h2 {
+	color: var(--dark-glare);
+}
+
+.stepsContentSection:first-child {
+	align-items: flex-start;
+	align-self: flex-start;
+	gap: 30px;
+	/*position: sticky;*/
+	/*top: calc(50% - 114px);*/
+}
+
+.stepsContentSectionColumnTitle {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.stepsContentRow {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
+	align-items: flex-start;
+	padding-top: 60px;
+}
+
+.stepsContentRow:first-child .stepsContentRowItem:first-child {
+	margin-top: -60px;
+}
+
+.stepsContentRow:last-child .stepsContentRowItem:first-child {
+	margin-top: -90px;
+}
+
+.stepsContentRow:last-child .stepsContentRowItem:last-child {
+	margin-top: -30px;
+}
+
+.stepsContentRowItem {
+	position: relative;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	flex: 1 1 0;
+	height: 300px;
+	gap: 15px;
+	border-radius: 15px;
+	padding: 30px;
+	box-shadow: 0 10px 30px 0 rgba(0,0,0,0.10);
+	transition: .25s;
+	user-select: none;
+}
+
+.stepsContentRowItem:hover {
+	transform: translateY(-5px);
+}
+
+.stepsContentRowItem * {
+	z-index: 2;
+}
+
+.stepsContentRowItemImage {
+	width: 66px;
+	height: 66px;
+	line-height: 66px;
+	vertical-align: middle;
+}
+
+.stepsContentRowItemText {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	text-align: justify;
+}
+
+.stepsContentRowItemStep {
+	position: absolute;
+	z-index: 1;
+	bottom: -15px;
+	right: -15px;
+	opacity: .75;
+}
+
+.stepsContentRowItemStep > h1 {
+	font-size: calc(4vw + 8vh + 7vmin);
+	line-height: .7;
+	color: var(--glacier-light);
+}
+
+@media only screen and (max-width: 1300px) {
+	.stepsContentContainer {
+		flex-direction: column;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	.stepsContentWrapper {
+		padding: 75px 0;
+	}
+}
+
+@media only screen and (max-width: 700px) {
+	.stepsContentSection {
+		gap: 30px;
+	}
+
+	.stepsContentRow {
+		flex-direction: column;
+		align-items: unset;
+		padding-top: 0;
+		height: 725px;
+	}
+
+	.stepsContentRow:first-child .stepsContentRowItem:first-child {
+		margin-top: 0;
+	}
+	
+	.stepsContentRow:last-child .stepsContentRowItem:first-child {
+		margin-top: 0;
+	}
+	
+	.stepsContentRow:last-child .stepsContentRowItem:last-child {
+		margin-top: 0;
+	}
+}

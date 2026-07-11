@@ -1,0 +1,89 @@
+.standardsContentWrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	flex-wrap: wrap;
+	width: 100%;
+	background-color: #FFFFFF;
+	padding: 150px 0;
+	gap: 75px;
+}
+
+.standardsContentSection {
+	flex-wrap: wrap;
+	display: flex;
+	width: calc(100% - 180px);
+	max-width: 1250px;
+	background-color: #000000;
+	padding: 75px;
+	margin: 0 15px;
+	gap: calc(75px / 2);
+}
+
+.standardsContentSectionColumn {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	flex: 1 1 0;
+	flex-wrap: wrap;
+	color: #FFFFFF;
+	gap: 50px;
+}
+
+.standardsContentSectionColumn:last-child {
+	gap: 25px;
+}
+
+.standardsContentSectionColumn h2 {
+	color: #FFFFFF;
+}
+
+.standardsContentSectionColumn h2:last-child {
+	color: var(--glacier-darker);
+}
+
+.standardsContentSectionColumn:last-child > .standardsContentSectionColumnItem {
+	display: flex;
+	align-self: normal;
+	gap: 25px;
+}
+
+.standardsContentSectionColumnItemImage {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 60px;
+	height: 60px;
+}
+
+.standardsContentSectionColumnItemImage > * {
+	justify-self: center;
+	align-self: center;
+}
+
+.standardsContentSectionColumnItemText h3 {
+	color: #FFFFFF;
+	font-weight: 500;
+	line-height: 30px;
+}
+
+.standardsContentSectionColumnItemText h3:last-child {
+	color: var(--glacier-darker);
+	font-weight: 300;
+}
+
+@media only screen and (max-width: 1240px) {
+	.standardsContentSection {
+		width: calc(100% - 130px);
+		max-width: 1300px;
+		padding: 50px;
+		gap: calc(50px / 2);
+	}
+}
+
+@media only screen and (max-width: 1164px) {
+	.standardsContentSection {
+		flex-direction: column;
+		gap: 50px;
+	}
+}

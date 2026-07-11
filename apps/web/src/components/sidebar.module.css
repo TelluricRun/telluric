@@ -1,0 +1,43 @@
+.sidebarContentWrapper {
+	width: 100%;
+	height: calc(100vh - 66px);
+	padding: 0;
+	background-color: #FFFFFF;
+	position: fixed;
+	top: 66px;
+	border-top: 1px solid var(--glacier-dark);
+	right: 0;
+	z-index: 999999999;
+	user-select: none;
+	display: flex;
+	flex-wrap: wrap;
+	transition: all 0.25s ease-out;
+	overflow-y: auto;
+}
+
+.sidebarContentWrapperRetracted  {
+	margin-right: -100%;
+}
+
+.sidebarContentSection {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 15px;
+	flex: 1;
+	padding: 15px;
+}
+
+.sidebarContentSectionRow {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	gap: 15px;
+}
+
+@media only screen and (min-width: 701px) {
+	.sidebarContentWrapper {
+		display: none;
+	}
+}

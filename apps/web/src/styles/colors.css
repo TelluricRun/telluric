@@ -1,0 +1,67 @@
+:root {
+	--dark-primary: #18181b;
+	--dark-secondary: #19171c;
+	--dark-tertiary: #0e0e0e;
+	--dark-glare: #2E2838;
+
+	--glacier: #f0f0f0;
+	--glacier-light: #f9f9f9;
+	--glacier-dark: #e1e1e1;
+	--glacier-darker: #d2d2d2;
+
+	--cinder: #0000001a;
+	--cinder-light: #0000000d;
+	--cinder-dark: #0000002c;
+
+	--gold: #e8e076;
+	--gold-bright: #FFD700;
+
+	--yellow-dark: #e7f256;
+	--yellow-light: #ecf26d;
+	--yellow-green: #ddf49b;
+
+	--tropical-green-light: #daf4b9;
+	--tropical-green: #cefb7f;
+	--tropical-green-dark: #b4dc81;
+
+	--tropical-green-light-transparent: rgb(218, 244, 185, 0.333);
+	--tropical-green-transparent: rgb(206, 251, 127, 0.333);
+	--tropical-green-dark-transparent: rgb(180, 220, 129, 0.333);
+
+	--rainforest-green-light: #9cee69;
+	--rainforest-green: #87e64b;
+	--rainforest-green-dark: #6cc832;
+
+	--tropical-blue-light: #4177e4;
+	--tropical-blue: #3268d5;
+	--tropical-blue-dark: #2b57b8;
+
+	--tropical-blue-cornflower: cornflowerblue;
+	--tropical-blue-royal: royalblue;
+
+	--midnight: #6c7ff2;
+	--midnight-light: #7f8ff4;
+	--midnight-dark: #546ae2;
+
+	--amethyst: #a087ce;
+	--amethyst-light: #ccb6f1;
+	--amethyst-dark: #8369b4;
+
+	--emerald: #1cca3d;
+	--emerald-light: #47db62;
+	--emerald-dark: #01a562;
+	--emerald-flat: #d9ffe9;
+	--emerald-flat-light: #e4fdef;
+	--emerald-flat-dark: #bff8d7;
+
+	--blaze: #f22e61;
+	--blaze-light: #eb2487;
+	--blaze-dark: #f93939;
+	--blaze-flat: #ffd9e3;
+
+	--link-primary: #71a9f1;
+	--link-secondary: #4895f1;
+	--text-primary: #7a7a7a;
+	--text-secondary: #aaaaaa;
+	--error-primary: #ff6262;
+}

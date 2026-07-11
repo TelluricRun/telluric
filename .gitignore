@@ -1,0 +1,24 @@
+# Dependency directories (handles root and all sub-packages)
+node_modules/
+.pnpm-store/
+
+# Turbo build cache
+.turbo/
+
+# Next.js / React / App build outputs
+.next/
+dist/
+build/
+out/
+
+# Environment variables (Crucial for security!)
+.env
+.env.local
+.env.*.local
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Log files
+*.log
