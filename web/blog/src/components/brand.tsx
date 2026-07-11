@@ -7,9 +7,9 @@ import { useLocale } from '@/utils/hooks/useLocale';
 import { useFont } from '@/utils/hooks/useFont';
 
 const Brand: React.FC = () => {
-	const { getAppUrls } = useConfig();
+	const { getAppsWebUrls } = useConfig();
 	const { i18n } = useLocale();
-	const { APP_SIGNUP_URL } = getAppUrls();
+	const { APPS_WEB_SIGNUP_URL } = getAppsWebUrls();
 	const { getRobotoFont } = useFont();
 	const robotoFont = getRobotoFont();
 
@@ -21,7 +21,7 @@ const Brand: React.FC = () => {
 				</div>
 				<div className={ styles.brandContentSection }>
 					<Link
-						href={ APP_SIGNUP_URL }
+						href={ APPS_WEB_SIGNUP_URL }
 						type={ 'secondary' }
 						size={ 'big' }
 						text={ i18n('components.brand.link-primary') }
