@@ -6,8 +6,6 @@
   "scripts": {
     "dev": "next dev -p 3001",
     "build": "next build",
-    "build:staging": "export APP_ENV=staging && next build && echo 'User-agent: *' > out/robots.txt && echo 'Disallow: /' >> out/robots.txt",
-    "build:production": "export APP_ENV=production && next build",
     "start": "next start",
     "lint": "next lint",
     "test": "vitest",
