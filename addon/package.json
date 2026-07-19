@@ -1,0 +1,7 @@
+{
+	"scripts": {
+		"addon:push:development": "clasp push --config .clasp-development.json",
+		"addon:push:staging": "clasp push --config .clasp-staging.json",
+		"addon:push:production": "clasp push --config .clasp-production.json"
+	}
+}
