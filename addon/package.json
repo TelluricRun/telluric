@@ -1,7 +1,7 @@
 {
 	"scripts": {
-		"addon:push:development": "clasp push --config .clasp-development.json",
-		"addon:push:staging": "clasp push --config .clasp-staging.json",
-		"addon:push:production": "clasp push --config .clasp-production.json"
+		"addon:push:development": "node -e \"require('fs').copyFileSync('.clasp-development.json', '.clasp.json')\" && clasp push",
+		"addon:push:staging": "node -e \"require('fs').copyFileSync('.clasp-staging.json', '.clasp.json')\" && clasp push",
+		"addon:push:production": "node -e \"require('fs').copyFileSync('.clasp-production.json', '.clasp.json')\" && clasp push"
 	}
 }
