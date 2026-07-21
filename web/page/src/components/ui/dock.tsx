@@ -17,11 +17,13 @@ export interface IDockProps {
 }
 
 export const Dock: React.FC<IDockProps> = ({
-																						 smart = true,
-																						 contained = true,
-																						 children = undefined,
-																					 }) => {
+	smart = true,
+	contained = true,
+	children = undefined,
+}) => {
 	const [smartDockSettings, setSmartDockSettings] = useState<string>('0px');
+	const [isAtTop, setIsAtTop] = useState(true);
+
 	const containedDockSettings = { maxWidth: '1400px' };
 
 	const applyDockStrategy = () => {
@@ -47,9 +49,23 @@ export const Dock: React.FC<IDockProps> = ({
 		applyDockStrategy();
 	}, []);
 
+	useEffect(() => {
+		const handleScroll = () => {
+			setIsAtTop(window.scrollY === 0);
+		};
+
+		handleScroll();
+
+		window.addEventListener("scroll", handleScroll);
+
+		return () => {
+			window.removeEventListener("scroll", handleScroll);
+		};
+	}, []);
+
 	return (
 		<header
-			className={ styles.dock }
+			className={ `${ styles.dock } ${ !isAtTop ? styles.scrolled : "" }` }
 			style={ smart ? { top: smartDockSettings } : undefined }
 			data-testid='dock'
 		>

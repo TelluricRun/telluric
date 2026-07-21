@@ -4,9 +4,10 @@
 	line-height: 66px;
 	background-color: rgba(255, 255, 255, 0.75);
 	backdrop-filter: blur(10px);
-	-moz-box-shadow: 0 0 12px 1px rgba(0, 0, 0, 0.25);
-	-webkit-box-shadow: 0 0 12px 1px rgba(0, 0, 0, 0.25);
-	box-shadow: 0 0 12px 1px rgba(0, 0, 0, 0.25);
+	border-bottom: 1px solid var(--glacier-dark);
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
 	padding: 0 15px;
 	position: fixed;
 	z-index: 999999999;
@@ -27,4 +28,11 @@
 	display: flex;
 	flex-wrap: wrap;
 	padding: 0;
+}
+
+.scrolled {
+    border-bottom-color: transparent;
+	-moz-box-shadow: 0 0 12px 1px rgba(0, 0, 0, 0.25);
+	-webkit-box-shadow: 0 0 12px 1px rgba(0, 0, 0, 0.25);
+	box-shadow: 0 0 12px 1px rgba(0, 0, 0, 0.25);
 }
